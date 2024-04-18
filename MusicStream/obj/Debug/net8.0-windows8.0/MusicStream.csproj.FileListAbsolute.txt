@@ -121,5 +121,8 @@ C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\Mus
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.Form2.resources
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.LoginForm.resources
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.MenuForm.resources
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.SavedSongsForm.resources
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.RecommendationForm.resources
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.SignInForm.resources

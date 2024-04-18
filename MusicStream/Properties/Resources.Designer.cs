@@ -59,15 +59,5 @@ namespace MusicStream.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1517407299172450247 {
-            get {
-                object obj = ResourceManager.GetObject("1517407299172450247", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

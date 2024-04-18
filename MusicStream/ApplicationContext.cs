@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace MusicStream
 {
     internal class ApplicationContext : DbContext
     {
         public DbSet<Songs> Songs { get; set; }
-        public DbSet <User> Users => Set<User>();
+        public DbSet<User> Users => Set<User>();
+        public DbSet<SavedSongs> SavedSongs => Set<SavedSongs>();
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //отношение таблиц сохр. треков и пользователей
         {
-            // Установление связи между пользователем и списком песен 
-            modelBuilder.Entity<Songs>()
-                .HasOne(o => o.User)
-                .WithMany(u => u.Songs)
-                .HasForeignKey(o => o.UserId);
+            modelBuilder.Entity<SavedSongs>()
+                .HasOne(ss => ss.User)
+                .WithMany(u => u.SavedSongs)
+                .HasForeignKey(ss => ss.UserId);
         }
+
         public ApplicationContext() => Database.EnsureCreated();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=users.db");
-        }  
+        }
     }
 }
