@@ -102,6 +102,7 @@
             PasswordTextBox.Location = new Point(200, 355);
             PasswordTextBox.Margin = new Padding(6, 2, 6, 2);
             PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.PasswordChar = '*';
             PasswordTextBox.PlaceholderText = "Введите пароль";
             PasswordTextBox.Size = new Size(869, 40);
             PasswordTextBox.TabIndex = 3;

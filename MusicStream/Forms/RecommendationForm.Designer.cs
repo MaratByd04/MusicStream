@@ -45,7 +45,7 @@
             GenreComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
             GenreComboBox.ForeColor = Color.PaleTurquoise;
             GenreComboBox.FormattingEnabled = true;
-            GenreComboBox.Location = new Point(12, 155);
+            GenreComboBox.Location = new Point(12, 222);
             GenreComboBox.Name = "GenreComboBox";
             GenreComboBox.Size = new Size(224, 33);
             GenreComboBox.TabIndex = 0;
@@ -57,7 +57,7 @@
             CountryComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
             CountryComboBox.ForeColor = Color.PaleTurquoise;
             CountryComboBox.FormattingEnabled = true;
-            CountryComboBox.Location = new Point(262, 155);
+            CountryComboBox.Location = new Point(260, 222);
             CountryComboBox.Name = "CountryComboBox";
             CountryComboBox.Size = new Size(224, 33);
             CountryComboBox.TabIndex = 1;
@@ -68,7 +68,7 @@
             YearsComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
             YearsComboBox.ForeColor = Color.PaleTurquoise;
             YearsComboBox.FormattingEnabled = true;
-            YearsComboBox.Location = new Point(514, 155);
+            YearsComboBox.Location = new Point(510, 222);
             YearsComboBox.Name = "YearsComboBox";
             YearsComboBox.Size = new Size(224, 33);
             YearsComboBox.TabIndex = 2;
@@ -79,7 +79,7 @@
             MoodComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
             MoodComboBox.ForeColor = Color.PaleTurquoise;
             MoodComboBox.FormattingEnabled = true;
-            MoodComboBox.Location = new Point(769, 155);
+            MoodComboBox.Location = new Point(765, 222);
             MoodComboBox.Name = "MoodComboBox";
             MoodComboBox.Size = new Size(224, 33);
             MoodComboBox.TabIndex = 3;
@@ -91,7 +91,7 @@
             ResultsListBox.ForeColor = Color.PaleTurquoise;
             ResultsListBox.FormattingEnabled = true;
             ResultsListBox.ItemHeight = 25;
-            ResultsListBox.Location = new Point(12, 249);
+            ResultsListBox.Location = new Point(12, 306);
             ResultsListBox.Name = "ResultsListBox";
             ResultsListBox.Size = new Size(1231, 204);
             ResultsListBox.TabIndex = 4;
@@ -113,9 +113,9 @@
             // 
             DurationComboBox.BackColor = Color.Black;
             DurationComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
-            DurationComboBox.ForeColor = Color.Blue;
+            DurationComboBox.ForeColor = Color.PaleTurquoise;
             DurationComboBox.FormattingEnabled = true;
-            DurationComboBox.Location = new Point(1019, 155);
+            DurationComboBox.Location = new Point(1015, 222);
             DurationComboBox.Name = "DurationComboBox";
             DurationComboBox.Size = new Size(224, 33);
             DurationComboBox.TabIndex = 6;

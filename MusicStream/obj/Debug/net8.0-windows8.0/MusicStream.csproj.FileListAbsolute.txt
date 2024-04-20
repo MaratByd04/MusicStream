@@ -126,3 +126,5 @@ C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\Mus
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.SavedSongsForm.resources
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.RecommendationForm.resources
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.SignInForm.resources
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.ProfileForm.resources
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.AddSongForm.resources

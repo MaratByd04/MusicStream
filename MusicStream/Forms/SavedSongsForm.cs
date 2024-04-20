@@ -22,6 +22,7 @@
                     {
                         SavedTracksListBox.Items.Add(savedSong);
                         SavedTracksListBox.DisplayMember = "SavedSongName";
+                        DeleteSongButton.Visible = true;
                     }
                     else
                     {

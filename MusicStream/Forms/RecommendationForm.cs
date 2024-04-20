@@ -73,10 +73,10 @@
                 {
                     filteredSongs = filteredSongs.Where(s => s.Duration == selectedDurations);
                 }
-
+                
                 //передача в listBox самих объектов, а не строк
                 ResultsListBox.DataSource = filteredSongs.ToList();
-                ResultsListBox.DisplayMember = "SongName";
+                ResultsListBox.DisplayMember = "SongName";  
             }
         }
         private void SaveTrackButton_Click(object sender, EventArgs e)

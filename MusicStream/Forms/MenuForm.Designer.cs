@@ -70,8 +70,9 @@
             CreateSongButton.Name = "CreateSongButton";
             CreateSongButton.Size = new Size(260, 67);
             CreateSongButton.TabIndex = 2;
-            CreateSongButton.Text = "Создать композицию";
+            CreateSongButton.Text = "Добавить композицию в список сервиса";
             CreateSongButton.UseVisualStyleBackColor = true;
+            CreateSongButton.Click += CreateSongButton_Click;
             // 
             // ProfileButton
             // 
@@ -84,6 +85,7 @@
             ProfileButton.TabIndex = 3;
             ProfileButton.Text = "Профиль";
             ProfileButton.UseVisualStyleBackColor = true;
+            ProfileButton.Click += ProfileButton_Click;
             // 
             // MenuForm
             // 

@@ -65,9 +65,9 @@
             // 
             // EmailTextBox
             // 
-            EmailTextBox.BackColor = Color.Black;
+            EmailTextBox.BackColor = SystemColors.InactiveCaption;
             EmailTextBox.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            EmailTextBox.ForeColor = Color.PaleTurquoise;
+            EmailTextBox.ForeColor = Color.Black;
             EmailTextBox.Location = new Point(41, 233);
             EmailTextBox.Name = "EmailTextBox";
             EmailTextBox.PlaceholderText = "Введите вашу электронную почту";
@@ -76,25 +76,29 @@
             // 
             // PasswordTextBox
             // 
-            PasswordTextBox.BackColor = Color.Black;
+            PasswordTextBox.BackColor = SystemColors.InactiveCaption;
             PasswordTextBox.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            PasswordTextBox.ForeColor = Color.PaleTurquoise;
+            PasswordTextBox.ForeColor = Color.Black;
             PasswordTextBox.Location = new Point(41, 321);
             PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.PasswordChar = '*';
             PasswordTextBox.PlaceholderText = "Придумайте пароль";
             PasswordTextBox.Size = new Size(1102, 32);
             PasswordTextBox.TabIndex = 3;
+            PasswordTextBox.UseSystemPasswordChar = true;
             // 
             // RepeatPasswordTextBox
             // 
-            RepeatPasswordTextBox.BackColor = Color.Black;
+            RepeatPasswordTextBox.BackColor = SystemColors.InactiveCaption;
             RepeatPasswordTextBox.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RepeatPasswordTextBox.ForeColor = Color.PaleTurquoise;
+            RepeatPasswordTextBox.ForeColor = Color.Black;
             RepeatPasswordTextBox.Location = new Point(41, 405);
             RepeatPasswordTextBox.Name = "RepeatPasswordTextBox";
+            RepeatPasswordTextBox.PasswordChar = '*';
             RepeatPasswordTextBox.PlaceholderText = "Повторите пароль";
             RepeatPasswordTextBox.Size = new Size(1102, 32);
             RepeatPasswordTextBox.TabIndex = 4;
+            RepeatPasswordTextBox.UseSystemPasswordChar = true;
             // 
             // EmailLabel
             // 
@@ -125,9 +129,9 @@
             RepeatPasswordLabel.ForeColor = Color.PaleTurquoise;
             RepeatPasswordLabel.Location = new Point(41, 376);
             RepeatPasswordLabel.Name = "RepeatPasswordLabel";
-            RepeatPasswordLabel.Size = new Size(128, 26);
+            RepeatPasswordLabel.Size = new Size(203, 26);
             RepeatPasswordLabel.TabIndex = 7;
-            RepeatPasswordLabel.Text = "Пароль";
+            RepeatPasswordLabel.Text = "Подтверждение пароля";
             // 
             // SignInButton
             // 

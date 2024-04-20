@@ -8,7 +8,7 @@ namespace MusicStream
         public DbSet<User> Users => Set<User>();
         public DbSet<SavedSongs> SavedSongs => Set<SavedSongs>();
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder) //отношение таблиц сохр. треков и пользователей
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //отношение таблиц сохр. треков и пользователейt
         {
             modelBuilder.Entity<SavedSongs>()
                 .HasOne(ss => ss.User)

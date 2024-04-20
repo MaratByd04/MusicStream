@@ -20,10 +20,11 @@ namespace MusicStream
                 {
                     PasswordTextBox.Clear();
 
-                    var menuForm = new MenuForm();
+                    var menuForm = new MenuForm(user);
                     menuForm.Show();
 
                     menuForm.CurrentUser = user; // сохранение вошедшего пользователя
+                    
                 }
                 else
                 {

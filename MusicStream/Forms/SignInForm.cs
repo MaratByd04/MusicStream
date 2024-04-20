@@ -31,24 +31,44 @@
                     RepeatPasswordTextBox.Clear();
                     return;
                 }
-
-                string login = email.Split('@')[0]; //получение логина, обрезая строку после "@"
-
-                var newUser = new User
+                if(email.Contains('@'))
                 {
-                    Email = email,
-                    Login = login,
-                    Password = password
-                };
+                    string[] emailParts = email.Split('@');
 
-                db.Users.Add(newUser);
-                db.SaveChanges();
+                    if (emailParts.Length == 1 && emailParts[0].Length >= 2 && emailParts[1].Length >= 3)
+                    {                      
+                        string login = emailParts[0]; //получение логина, обрезая строку после "@"
 
-                MessageBox.Show("Пользователь успешно зарегистрирован!", "Успешная регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                EmailTextBox.Clear();
-                PasswordTextBox.Clear();
-                RepeatPasswordTextBox.Clear();
-                this.Hide();
+                        var newUser = new User
+                        {
+                            Email = email,
+                            Login = login,
+                            Password = password
+                        };
+
+                        db.Users.Add(newUser);
+                        db.SaveChanges();
+
+                        MessageBox.Show("Пользователь успешно зарегистрирован! \nДля дальнейшего входа в качестве логина используйте адрес вашей почты до знака - @", "Успешная регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        EmailTextBox.Clear();
+                        PasswordTextBox.Clear();
+                        RepeatPasswordTextBox.Clear();
+                        this.Hide();
+
+                        var menuForm = new MenuForm(newUser);
+                        menuForm.Show();
+
+                        menuForm.CurrentUser = newUser;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Email должен содержать не менее 1 символа перед и 3 символов после знака - @", "Ошибка ввода Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Введите корректное название электронной почты, используя знак - @");
+                }   
             } 
         }
     }
