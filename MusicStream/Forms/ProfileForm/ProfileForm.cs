@@ -25,7 +25,7 @@
         {
             using(var db = new ApplicationContext())
             {
-                string name = NameTextBox.Text;
+                var name = NameTextBox.Text;
                 if(currentUser != null)
                 {
                     currentUser.Name = name;

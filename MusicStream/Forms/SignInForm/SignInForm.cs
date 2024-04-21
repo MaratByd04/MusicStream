@@ -10,9 +10,9 @@
         {
             using(var db = new  ApplicationContext())
             {
-                string email = EmailTextBox.Text;
-                string password = PasswordTextBox.Text;
-                string repeatPassword = RepeatPasswordTextBox.Text;
+                var email = EmailTextBox.Text;
+                var password = PasswordTextBox.Text;
+                var repeatPassword = RepeatPasswordTextBox.Text;
 
                 if (password != repeatPassword)
                 {
@@ -31,13 +31,14 @@
                     RepeatPasswordTextBox.Clear();
                     return;
                 }
-                if(email.Contains('@'))
+
+                if (email.Contains('@'))
                 {
                     string[] emailParts = email.Split('@');
 
-                    if (emailParts.Length == 1 && emailParts[0].Length >= 2 && emailParts[1].Length >= 3)
-                    {                      
-                        string login = emailParts[0]; //получение логина, обрезая строку после "@"
+                    if (emailParts.Length == 2 && emailParts[0].Length >= 1 && emailParts[1].Length >= 3)
+                    {
+                        var login = emailParts[0]; //получение логина, обрезая строку после "@"
 
                         var newUser = new User
                         {
@@ -67,7 +68,7 @@
                 }
                 else
                 {
-                    MessageBox.Show("Введите корректное название электронной почты, используя знак - @");
+                    MessageBox.Show("Введите корректное название электронной почты, используя знак - @", "Ошибка ввода Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }   
             } 
         }

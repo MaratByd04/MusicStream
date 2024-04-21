@@ -41,11 +41,11 @@
             using (var db = new ApplicationContext())
             {
                 // передача выбранных характеристик 
-                string selectedGenre = GenreComboBox.SelectedItem?.ToString() ?? string.Empty;
-                string selectedCountry = CountryComboBox.SelectedItem?.ToString() ?? string.Empty;
-                string selectedYears = YearsComboBox.SelectedItem?.ToString() ?? string.Empty;
-                string selectedMood = MoodComboBox.SelectedItem?.ToString() ?? string.Empty;
-                string selectedDurations = DurationComboBox.SelectedItem?.ToString() ?? string.Empty;
+                var selectedGenre = GenreComboBox.SelectedItem?.ToString() ?? string.Empty;
+                var selectedCountry = CountryComboBox.SelectedItem?.ToString() ?? string.Empty;
+                var selectedYears = YearsComboBox.SelectedItem?.ToString() ?? string.Empty;
+                var selectedMood = MoodComboBox.SelectedItem?.ToString() ?? string.Empty;
+                var selectedDurations = DurationComboBox.SelectedItem?.ToString() ?? string.Empty;
 
                 var filteredSongs = db.Songs.AsQueryable();
 

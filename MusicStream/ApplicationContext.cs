@@ -14,6 +14,12 @@ namespace MusicStream
                 .HasOne(ss => ss.User)
                 .WithMany(u => u.SavedSongs)
                 .HasForeignKey(ss => ss.UserId);
+
+            /*
+             * modelBuilder.Entity<YourEntity>()
+            .Property(e => e.NewId)
+            .HasColumnType("uniqueidentifier");
+            */
         }
 
         public ApplicationContext() => Database.EnsureCreated();

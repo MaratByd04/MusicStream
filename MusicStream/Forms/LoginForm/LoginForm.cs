@@ -10,8 +10,8 @@ namespace MusicStream
         {
             using(var db = new  ApplicationContext())
             {
-                string login = LoginTextBox.Text;
-                string password = PasswordTextBox.Text;
+                var login = LoginTextBox.Text;
+                var password = PasswordTextBox.Text;
 
                 // проверка на существование пользователя 
                 var user = db.Users.FirstOrDefault(u => u.Login == login && u.Password == password);
