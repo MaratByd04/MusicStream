@@ -43,7 +43,8 @@ namespace MusicStream
         /// <summary>
         /// свойство, устанавливающее связь песни с ID пользователя
         /// </summary>
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
+
         /// <summary>
         /// свойство, хранящее объект пользователя, к которому будут относиться сохраненные песни 
         /// </summary>

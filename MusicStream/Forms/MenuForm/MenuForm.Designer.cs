@@ -40,7 +40,7 @@
             RecommendationButton.FlatStyle = FlatStyle.Flat;
             RecommendationButton.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold);
             RecommendationButton.ForeColor = Color.PaleTurquoise;
-            RecommendationButton.Location = new Point(12, 158);
+            RecommendationButton.Location = new Point(12, 184);
             RecommendationButton.Name = "RecommendationButton";
             RecommendationButton.Size = new Size(260, 65);
             RecommendationButton.TabIndex = 0;
@@ -53,7 +53,7 @@
             TrackListButton.FlatStyle = FlatStyle.Flat;
             TrackListButton.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold);
             TrackListButton.ForeColor = Color.PaleTurquoise;
-            TrackListButton.Location = new Point(304, 157);
+            TrackListButton.Location = new Point(12, 293);
             TrackListButton.Name = "TrackListButton";
             TrackListButton.Size = new Size(260, 65);
             TrackListButton.TabIndex = 1;
@@ -66,7 +66,7 @@
             CreateSongButton.FlatStyle = FlatStyle.Flat;
             CreateSongButton.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold);
             CreateSongButton.ForeColor = Color.PaleTurquoise;
-            CreateSongButton.Location = new Point(602, 157);
+            CreateSongButton.Location = new Point(12, 397);
             CreateSongButton.Name = "CreateSongButton";
             CreateSongButton.Size = new Size(260, 67);
             CreateSongButton.TabIndex = 2;
@@ -79,7 +79,7 @@
             ProfileButton.FlatStyle = FlatStyle.Flat;
             ProfileButton.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold);
             ProfileButton.ForeColor = Color.PaleTurquoise;
-            ProfileButton.Location = new Point(896, 159);
+            ProfileButton.Location = new Point(12, 503);
             ProfileButton.Name = "ProfileButton";
             ProfileButton.Size = new Size(260, 65);
             ProfileButton.TabIndex = 3;
@@ -101,6 +101,7 @@
             Name = "MenuForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MenuForm";
+            FormClosing += this.MenuForm_FormClosing;
             ResumeLayout(false);
         }
 

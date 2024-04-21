@@ -87,6 +87,7 @@
             Controls.Add(SavedTracksListBox);
             Name = "SavedSongsForm";
             Text = "Мои треки";
+            FormClosing += SavedSongsForm_FormClosing;
             ResumeLayout(false);
         }
 

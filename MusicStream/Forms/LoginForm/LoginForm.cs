@@ -24,6 +24,8 @@ namespace MusicStream
                     menuForm.Show();
 
                     menuForm.CurrentUser = user; // сохранение вошедшего пользователя
+
+                    this.Hide();
                     
                 }
                 else
