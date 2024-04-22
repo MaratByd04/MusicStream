@@ -12,18 +12,22 @@ namespace MusicStream
         /// </summary>
         [Key]
         public int SongId { get; set; }
+
         /// <summary>
         /// свойство, хранящее название песни
         /// </summary>
         public string? SongName { get; set; }
+
         /// <summary>
         /// свойство, хранящее автора песни
         /// </summary>
         public string? Author { get; set; }
+
         /// <summary>
         /// свойство, хранящее жанр песни
         /// </summary>
         public string? Genre { get; set; }
+
         /// <summary>
         /// свойство, хранящее страну песни
         /// </summary>
@@ -32,10 +36,12 @@ namespace MusicStream
         /// свойство, хранящее годы песни
         /// </summary>
         public string? SongYears { get; set; }
+
         /// <summary>
         /// свойство, хранящее настроение песни
         /// </summary>
         public string? Mood { get; set; }
+
         /// <summary>
         /// свойство, хранящее продолжительность песни
         /// </summary>

@@ -151,6 +151,7 @@
             Name = "RecommendationForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Рекомендации";
+            FormClosed += this.RecommendationForm_FormClosed;
             ResumeLayout(false);
         }
 

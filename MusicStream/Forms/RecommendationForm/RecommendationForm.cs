@@ -1,8 +1,11 @@
-﻿namespace MusicStream
+﻿using NLog.LayoutRenderers.Wrappers;
+
+namespace MusicStream
 {
     public partial class RecommendationForm : Form
     {
         private User currentUser;
+
         public RecommendationForm(User user)
         {
             currentUser = user;
@@ -126,6 +129,13 @@
                     MessageBox.Show("Пожалуйста, выберите песню для сохранения.");
                 }
             }
+        }
+
+        private void RecommendationForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var menuForm = new MenuForm(currentUser);
+            menuForm.Show();
+            this.Hide();
         }
     }
 }

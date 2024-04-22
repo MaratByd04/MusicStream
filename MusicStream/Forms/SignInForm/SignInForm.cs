@@ -72,5 +72,10 @@
                 }   
             } 
         }
+        private void SignInForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            LoginForm.Instance.Show();
+            this.Hide();
+        }
     }
 }

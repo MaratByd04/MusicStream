@@ -33,6 +33,7 @@
             TrackListButton = new Button();
             CreateSongButton = new Button();
             ProfileButton = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // RecommendationButton
@@ -87,6 +88,13 @@
             ProfileButton.UseVisualStyleBackColor = true;
             ProfileButton.Click += ProfileButton_Click;
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Location = new Point(340, 183);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(758, 321);
+            flowLayoutPanel1.TabIndex = 4;
+            // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -94,6 +102,7 @@
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1168, 667);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(ProfileButton);
             Controls.Add(CreateSongButton);
             Controls.Add(TrackListButton);
@@ -101,7 +110,7 @@
             Name = "MenuForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MenuForm";
-            FormClosing += this.MenuForm_FormClosing;
+            FormClosed += MenuForm_FormClosed;
             ResumeLayout(false);
         }
 
@@ -111,5 +120,6 @@
         private Button TrackListButton;
         private Button CreateSongButton;
         private Button ProfileButton;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

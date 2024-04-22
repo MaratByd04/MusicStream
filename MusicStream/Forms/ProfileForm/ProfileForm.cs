@@ -1,13 +1,20 @@
-﻿namespace MusicStream
+﻿using Microsoft.EntityFrameworkCore;
+using NLog;
+using System.Xml.Linq;
+
+namespace MusicStream
 {
     public partial class ProfileForm : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         private User currentUser;
         public ProfileForm(User user)
         {
             InitializeComponent();
             currentUser = user;
         }
+
         private void ProfileForm_Load(object sender, EventArgs e)
         {
             if (currentUser != null)
@@ -18,21 +25,38 @@
             }
             else
             {
-                MessageBox.Show("эта тварь уходит в нул");
+                MessageBox.Show("Пользователль - null");
             }
-        }    
+        }
+        
         private void EditProfileDataButton_Click(object sender, EventArgs e)
         {
-            using(var db = new ApplicationContext())
+            
+            using (var db = new ApplicationContext())
             {
-                var name = NameTextBox.Text;
-                if(currentUser != null)
+                if (currentUser != null)
                 {
-                    currentUser.Name = name;
-                    MessageBox.Show("Данные успешно обновлены");
+                    currentUser.Name = NameTextBox.Text;
+                    currentUser.Email = EmailTextBox.Text;
+                    currentUser.Login = LoginTextBox.Text;
+
                     db.SaveChanges();
-                }    
+
+                    
+
+                    logger.Info($"Пользователь {currentUser.Login} обновил свое имя на {NameTextBox.Text}");
+
+                    MessageBox.Show("Данные успешно обновлены");
+                }
             }
+            
+        }
+
+        private void ProfileForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var menuForm = new MenuForm(currentUser);
+            menuForm.Show();
+            this.Hide();
         }
     }
 }

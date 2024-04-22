@@ -164,6 +164,7 @@
             Controls.Add(MusicStreamLabel);
             Name = "SignInForm";
             Text = "SignInForm";
+            FormClosing += this.SignInForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -4,14 +4,12 @@
     /// класс пользоветеля, который представляет таблицу в БД
     /// </summary>
     public class User
-    {
-        
+    {  
         /// <summary>
         /// свойство, хранящее ID пользователя
         /// </summary>
         public Guid Id { get; set; }
         
-
         /// <summary>
         /// свойство, хранящее имя пользователя
         /// </summary>
@@ -35,9 +33,6 @@
         /// <summary>
         /// свойство, хранящее список сохраненных песен 
         /// </summary>
-        public ICollection<SavedSongs> SavedSongs { get; set; } = new List<SavedSongs>();
-
-
-        
+        public ICollection<SavedSongs> SavedSongs { get; set; } = new List<SavedSongs>();   
     }
 }

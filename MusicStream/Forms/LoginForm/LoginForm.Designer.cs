@@ -183,6 +183,7 @@
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Авторизация";
+            FormClosed += this.LoginForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

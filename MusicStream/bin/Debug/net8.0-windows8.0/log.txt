@@ -1,0 +1,25 @@
+2024-04-22 00:00:34.7729|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:00:46.0128|INFO|MusicStream.ProfileForm|Пользователь marat обновил свое имя на Маратn
+2024-04-22 00:21:52.4556|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:24:55.4929|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:25:00.5374|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:25:17.8174|INFO|MusicStream.ProfileForm|Пользователь marat обновил свое имя на Марат
+2024-04-22 00:25:33.8758|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:27:15.4213|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:27:30.1185|INFO|MusicStream.ProfileForm|Пользователь marat обновил свое имя на Марат
+2024-04-22 00:27:40.1905|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:34:08.8429|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:34:42.6601|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:35:45.9764|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:36:23.7480|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:37:53.0130|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:38:05.8795|INFO|MusicStream.ProfileForm|Пользователь temir обновил свое имя на Темир
+2024-04-22 00:39:28.9268|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:39:53.3260|INFO|MusicStream.ProfileForm|Пользователь temir обновил свое имя на Темир
+2024-04-22 00:42:37.1758|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:44:57.7337|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:47:12.1348|INFO|MusicStream.Program|Программа запущена
+2024-04-22 00:47:24.0786|INFO|MusicStream.ProfileForm|Пользователь marat обновил свое имя на Марат
+2024-04-22 17:42:15.9811|INFO|MusicStream.Program|Программа запущена
+2024-04-22 17:42:41.5195|INFO|MusicStream.ProfileForm|Пользователь marat обновил свое имя на Марат
+2024-04-22 18:35:19.5776|INFO|MusicStream.Program|Программа запущена

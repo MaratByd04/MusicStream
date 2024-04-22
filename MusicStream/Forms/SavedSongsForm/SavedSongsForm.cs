@@ -60,9 +60,10 @@
         }
         private void SavedSongsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Открываем форму MenuForm при закрытии текущей формы
             var menuForm = new MenuForm(currentUser);
             menuForm.Show();
+
+            this.Hide();
         }
     }
 }

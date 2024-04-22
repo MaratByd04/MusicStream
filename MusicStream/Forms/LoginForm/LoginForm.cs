@@ -2,9 +2,28 @@ namespace MusicStream
 {
     public partial class LoginForm : Form
     {
+        private static LoginForm? instance;
+        /// <summary>
+        /// свойство, отвечающее за паттерн singleton
+        /// </summary>
+        public static LoginForm Instance
+        {
+            get
+            {
+                if (instance == null || instance.IsDisposed)
+                {
+                    instance = new LoginForm();
+                }
+                return instance;
+            }
+        }
+
+        private MenuForm menuForm;
         public LoginForm()
         {
             InitializeComponent();
+
+            menuForm = new MenuForm(null!);
         }
         private void LogInButton_Click(object sender, EventArgs e)
         {
@@ -20,13 +39,10 @@ namespace MusicStream
                 {
                     PasswordTextBox.Clear();
 
-                    var menuForm = new MenuForm(user);
+                    menuForm.CurrentUser = user;
                     menuForm.Show();
 
-                    menuForm.CurrentUser = user; // сохранение вошедшего пользователя
-
-                    this.Hide();
-                    
+                    this.Hide();   
                 }
                 else
                 {
@@ -39,6 +55,12 @@ namespace MusicStream
         {
             var signInForm = new SignInForm();
             signInForm.Show();
+            this.Hide();
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

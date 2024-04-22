@@ -102,6 +102,7 @@
             Controls.Add(SongNameTextBox);
             Name = "AddSongForm";
             Text = "Form1";
+            FormClosing += this.AddSongForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

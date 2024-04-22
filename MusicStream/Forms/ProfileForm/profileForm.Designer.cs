@@ -116,7 +116,7 @@
             EditProfileDataButton.Size = new Size(290, 37);
             EditProfileDataButton.TabIndex = 8;
             EditProfileDataButton.Text = "Редактировать профиль";
-            EditProfileDataButton.Click += this.EditProfileDataButton_Click;
+            EditProfileDataButton.Click += EditProfileDataButton_Click;
             // 
             // ProfileForm
             // 
@@ -135,6 +135,7 @@
             Controls.Add(ProfilePictureBox);
             Name = "ProfileForm";
             Text = "Профиль";
+            FormClosing += this.ProfileForm_FormClosing;
             Load += ProfileForm_Load;
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);

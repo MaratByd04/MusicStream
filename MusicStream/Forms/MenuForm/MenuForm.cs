@@ -15,11 +15,9 @@
 
         private void RecommendationButton_Click(object sender, EventArgs e)
         {
-            var user = CurrentUser;
-            var form2 = new RecommendationForm(user);
-            form2.Show();
+            var recommendationForm = new RecommendationForm(CurrentUser);
+            recommendationForm.Show();
             this.Hide();
-
         }
 
         private void TrackListButton_Click(object sender, EventArgs e)
@@ -38,16 +36,15 @@
 
         private void CreateSongButton_Click(object sender, EventArgs e)
         {
-            var addSongForm = new AddSongForm(); // добавь юзера 
+            var addSongForm = new AddSongForm(CurrentUser); // добавь юзера 
             addSongForm.Show();
             this.Hide();
         }
 
-        private void MenuForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            var loginForm = new LoginForm();
-            loginForm.Show();
-
+        private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
+        {   
+            LoginForm.Instance.Show();
+            this.Hide();
         }
     }
 }
