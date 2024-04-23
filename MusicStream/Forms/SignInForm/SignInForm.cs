@@ -1,10 +1,15 @@
-﻿namespace MusicStream
+﻿using MusicStream.Forms.MenuForm;
+
+namespace MusicStream
 {
     public partial class SignInForm : Form
     {
+        private readonly RecommendationEngine recommendationEngine;
         public SignInForm()
         {
             InitializeComponent();
+
+            recommendationEngine = new RecommendationEngine();
         }
         private void SignInButton_Click(object sender, EventArgs e)
         {

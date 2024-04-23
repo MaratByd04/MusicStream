@@ -130,3 +130,5 @@ C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\Mus
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\obj\Debug\net8.0-windows8.0\MusicStream.AddSongForm.resources
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\NLog.config
 C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\NLog.dll
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\Castle.Core.dll
+C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\bin\Debug\net8.0-windows8.0\Moq.dll

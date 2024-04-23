@@ -148,10 +148,12 @@
             Controls.Add(YearsComboBox);
             Controls.Add(CountryComboBox);
             Controls.Add(GenreComboBox);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "RecommendationForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Рекомендации";
-            FormClosed += this.RecommendationForm_FormClosed;
+            FormClosed += RecommendationForm_FormClosed;
             ResumeLayout(false);
         }
 

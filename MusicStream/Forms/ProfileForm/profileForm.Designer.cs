@@ -133,9 +133,12 @@
             Controls.Add(NameTextBox);
             Controls.Add(EditProfilePicture);
             Controls.Add(ProfilePictureBox);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "ProfileForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Профиль";
-            FormClosing += this.ProfileForm_FormClosing;
+            FormClosing += ProfileForm_FormClosing;
             Load += ProfileForm_Load;
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);

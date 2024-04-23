@@ -85,7 +85,10 @@
             Controls.Add(DeleteSongButton);
             Controls.Add(ShowFavoriteSongsButton);
             Controls.Add(SavedTracksListBox);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "SavedSongsForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Мои треки";
             FormClosing += SavedSongsForm_FormClosing;
             ResumeLayout(false);

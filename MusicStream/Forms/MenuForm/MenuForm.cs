@@ -1,7 +1,12 @@
-﻿namespace MusicStream
+﻿using MusicStream.Forms.MenuForm;
+using System.Windows.Forms;
+
+namespace MusicStream
 {
     public partial class MenuForm : Form
     {
+        private readonly RecommendationEngine recommendationEngine;
+
         /// <summary>
         /// Свойство, которое хранит текущего пользователя
         /// </summary>
@@ -11,6 +16,29 @@
         {
             InitializeComponent();
             CurrentUser = user;
+
+            recommendationEngine = RecommendationEngineProvider.GetRecommendationEngine();
+        }
+
+        private void ShowPlaylist(List<Songs> playlist)
+        {
+            PlaylistListBox.DataSource = null;
+            PlaylistListBox.Items.Clear();
+
+            foreach (var song in playlist)
+            {
+                PlaylistListBox.Items.Add(song.SongName.ToString()); // Предполагается, что у песни есть свойство Title
+            }
+
+            //передача в listBox самих объектов, а не строк
+            PlaylistListBox.DataSource = playlist.ToList();
+            PlaylistListBox.DisplayMember = "SongName";
+
+            PlaylistListBox.BringToFront();
+            PlaylistListBox.Visible = true;
+            HidePlaylistButton.BringToFront();
+            HidePlaylistButton.Visible = true;
+            SaveTrackButton.Visible = true;
         }
 
         private void RecommendationButton_Click(object sender, EventArgs e)
@@ -45,6 +73,77 @@
         {   
             LoginForm.Instance.Show();
             this.Hide();
+        }
+
+        private void SadnessPlaylistButton_Click(Object sender, EventArgs e)
+        {
+            ShowPlaylist(recommendationEngine.GetSadnessPlaylist());
+        }
+
+        private void WorkPlaylistButton_Click(object sender, EventArgs e)
+        {
+            ShowPlaylist(recommendationEngine.GetWorkPlaylist());
+        }
+
+        private void SportPlaylistButton_Click(object sender, EventArgs e)
+        {
+            ShowPlaylist(recommendationEngine.GetSportPlaylist());
+        }
+
+        private void HidePlaylistButton_Click(object sender, EventArgs e)
+        {
+            PlaylistListBox.Visible = false;
+            HidePlaylistButton.Visible = false;
+            SaveTrackButton.Visible = false;
+        }
+
+        private void SaveTrackButton_Click(object sender, EventArgs e)
+        {
+            using (var db = new ApplicationContext())
+            {
+                if (PlaylistListBox.SelectedItem != null)
+                {
+                    var selectedSong = PlaylistListBox.SelectedItem as Songs;
+
+                    if (selectedSong != null)
+                    {
+                        var existingSong = db.SavedSongs.FirstOrDefault(s => s.SavedSongName == selectedSong.SongName && s.UserId == CurrentUser.Id);
+
+                        if (existingSong == null)
+                        {
+                            // создание новой записи в SavedSongs
+                            var savedSong = new SavedSongs
+                            {
+                                SavedSongName = selectedSong.SongName,
+                                SavedSongAuthor = selectedSong.Author,
+                                SavedSongGenre = selectedSong.Genre,
+                                SavedSongCountry = selectedSong.SongCountry,
+                                SavedSongYears = selectedSong.SongYears,
+                                SavedSongMood = selectedSong.Mood,
+                                SavedSongDuration = selectedSong.Duration,
+                                UserId = CurrentUser.Id
+                            };
+
+                            db.SavedSongs.Add(savedSong);
+                            db.SaveChanges();
+
+                            MessageBox.Show("Песня добавлена!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Эта песня уже добавлена в избранное.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Что-то пошло не так");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Пожалуйста, выберите песню для сохранения.");
+                }
+            }
         }
     }
 }

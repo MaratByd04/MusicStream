@@ -162,9 +162,12 @@
             Controls.Add(EmailTextBox);
             Controls.Add(EnterLabel);
             Controls.Add(MusicStreamLabel);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "SignInForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SignInForm";
-            FormClosing += this.SignInForm_FormClosing;
+            FormClosing += SignInForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

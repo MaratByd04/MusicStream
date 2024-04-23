@@ -180,10 +180,12 @@
             ForeColor = Color.MidnightBlue;
             KeyPreview = true;
             Margin = new Padding(6, 2, 6, 2);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Авторизация";
-            FormClosed += this.LoginForm_FormClosed;
+            FormClosed += LoginForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,7 +196,6 @@
         private TextBox LoginTextBox;
         private Label EnterLabel;
         private TextBox PasswordTextBox;
-        private Button LogInButton;
         private Label LoginLabel;
         private Label PasswordLabel;
         private Button SignInButton;

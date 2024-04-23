@@ -1,4 +1,6 @@
-﻿namespace MusicStream
+﻿using System.Reflection.Metadata;
+
+namespace MusicStream
 {
     /// <summary>
     /// класс пользоветеля, который представляет таблицу в БД
@@ -29,6 +31,8 @@
         /// свойство, хранящее пароль пользоваетеля
         /// </summary>
         public string? Password { get; set; }
+
+      
 
         /// <summary>
         /// свойство, хранящее список сохраненных песен 

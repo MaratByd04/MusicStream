@@ -1,4 +1,6 @@
-﻿namespace MusicStream
+﻿using MusicStream.Forms.MenuForm;
+
+namespace MusicStream
 {
     public partial class AddSongForm : Form
     {
@@ -8,6 +10,7 @@
             InitializeComponent();
 
             CurrentUser = currentUser;  
+
         }
 
         private void AddSongForm_FormClosing(object sender, FormClosingEventArgs e)

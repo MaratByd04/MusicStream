@@ -100,9 +100,12 @@
             Controls.Add(SongYearsTextBox);
             Controls.Add(SongCountryTextBox);
             Controls.Add(SongNameTextBox);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddSongForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            FormClosing += this.AddSongForm_FormClosing;
+            FormClosing += AddSongForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

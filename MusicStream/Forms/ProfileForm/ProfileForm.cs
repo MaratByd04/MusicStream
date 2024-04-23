@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic.ApplicationServices;
 using NLog;
 using System.Xml.Linq;
 
@@ -31,24 +32,27 @@ namespace MusicStream
         
         private void EditProfileDataButton_Click(object sender, EventArgs e)
         {
-            
             using (var db = new ApplicationContext())
             {
                 if (currentUser != null)
                 {
+                    // Перезагрузка объекта из базы данных перед сохранением изменений
+                    db.Entry(currentUser).Reload();
+
                     currentUser.Name = NameTextBox.Text;
                     currentUser.Email = EmailTextBox.Text;
                     currentUser.Login = LoginTextBox.Text;
 
                     db.SaveChanges();
 
-                    
-
                     logger.Info($"Пользователь {currentUser.Login} обновил свое имя на {NameTextBox.Text}");
 
                     MessageBox.Show("Данные успешно обновлены");
                 }
+                db.Dispose(); // Закрываем контекст базы данных
+
             }
+
             
         }
 

@@ -1,8 +1,13 @@
+using MusicStream.Forms.MenuForm;
+
 namespace MusicStream
 {
     public partial class LoginForm : Form
     {
+        private RecommendationEngine recommendationEngine = null!;
+        
         private static LoginForm? instance;
+
         /// <summary>
         /// свойство, отвечающее за паттерн singleton
         /// </summary>
@@ -18,16 +23,16 @@ namespace MusicStream
             }
         }
 
-        private MenuForm menuForm;
+        
         public LoginForm()
         {
             InitializeComponent();
 
-            menuForm = new MenuForm(null!);
+            RecommendationEngineProvider.Initialize();
         }
         private void LogInButton_Click(object sender, EventArgs e)
         {
-            using(var db = new  ApplicationContext())
+            using(var db = new ApplicationContext())
             {
                 var login = LoginTextBox.Text;
                 var password = PasswordTextBox.Text;
@@ -39,7 +44,7 @@ namespace MusicStream
                 {
                     PasswordTextBox.Clear();
 
-                    menuForm.CurrentUser = user;
+                    var menuForm = new MenuForm(user);
                     menuForm.Show();
 
                     this.Hide();   

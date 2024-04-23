@@ -45,6 +45,9 @@
                         db.SavedSongs.Remove(savedSong);
                         db.SaveChanges();
 
+                        // Удалить элемент из списка
+                        SavedTracksListBox.Items.Remove(selectedSong);
+
                         MessageBox.Show("Песня убрана из избранного!");
                     }
                     else
