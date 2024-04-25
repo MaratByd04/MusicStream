@@ -4,8 +4,12 @@ namespace MusicStream
 {
     public partial class RecommendationForm : Form
     {
-        private User currentUser;
+        private User? currentUser;
 
+        public RecommendationForm()
+        {
+
+        }
         public RecommendationForm(User user)
         {
             currentUser = user;
@@ -86,49 +90,54 @@ namespace MusicStream
         {
             using (var db = new ApplicationContext())
             {
-                if (ResultsListBox.SelectedItem != null)
+                var selectedSong = GetSelectedSongFromListBox();
+
+                if (selectedSong != null)
                 {
-                    var selectedSong = ResultsListBox.SelectedItem as Songs;
-
-                    if (selectedSong != null)
+                    if (!CheckIfSongAlreadySaved(selectedSong, db))
                     {
-                        var existingSong = db.SavedSongs.FirstOrDefault(s => s.SavedSongName == selectedSong.SongName && s.UserId == currentUser.Id);
-
-                        if (existingSong == null) 
-                        {
-                            // создание новой записи в SavedSongs
-                            var savedSong = new SavedSongs
-                            {
-                                SavedSongName = selectedSong.SongName,
-                                SavedSongAuthor = selectedSong.Author,
-                                SavedSongGenre = selectedSong.Genre,
-                                SavedSongCountry = selectedSong.SongCountry,
-                                SavedSongYears = selectedSong.SongYears,
-                                SavedSongMood = selectedSong.Mood,
-                                SavedSongDuration = selectedSong.Duration,
-                                UserId = currentUser.Id
-                            };
-
-                            db.SavedSongs.Add(savedSong);
-                            db.SaveChanges();
-
-                            MessageBox.Show("Песня добавлена!");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Эта песня уже добавлена в избранное.");
-                        }
+                        AddSongToSavedSongs(selectedSong, db);
                     }
                     else
                     {
-                        MessageBox.Show("Что-то пошло не так");
+                        MessageBox.Show("Эта песня уже добавлена в избранное.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Пожалуйста, выберите песню для сохранения.");
+                    MessageBox.Show("Что-то пошло не так");
                 }
             }
+        }
+
+        public Songs GetSelectedSongFromListBox()
+        {
+            return ResultsListBox.SelectedItem as Songs;
+        }
+
+        private bool CheckIfSongAlreadySaved(Songs selectedSong, ApplicationContext db)
+        {
+            return db.SavedSongs.Any(s => s.SavedSongName == selectedSong.SongName && s.UserId == currentUser.Id);
+        }
+
+        private void AddSongToSavedSongs(Songs selectedSong, ApplicationContext db)
+        {
+            var savedSong = new SavedSongs
+            {
+                SavedSongName = selectedSong.SongName,
+                SavedSongAuthor = selectedSong.Author,
+                SavedSongGenre = selectedSong.Genre,
+                SavedSongCountry = selectedSong.SongCountry,
+                SavedSongYears = selectedSong.SongYears,
+                SavedSongMood = selectedSong.Mood,
+                SavedSongDuration = selectedSong.Duration,
+                UserId = currentUser.Id
+            };
+
+            db.SavedSongs.Add(savedSong);
+            db.SaveChanges();
+
+            MessageBox.Show("Песня добавлена!");
         }
 
         private void RecommendationForm_FormClosed(object sender, FormClosedEventArgs e)

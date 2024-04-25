@@ -10,50 +10,78 @@ namespace MusicStream
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         private User currentUser;
-        public ProfileForm(User user)
+        private ApplicationContext db;
+
+        public ProfileForm(User user, ApplicationContext db)
         {
             InitializeComponent();
             currentUser = user;
+            this.db = db;
+        }
+
+        public void FillUserData(User currentUser)
+        {
+            NameTextBox.Text = currentUser.Name ?? string.Empty;
+            EmailTextBox.Text = currentUser.Email ?? string.Empty;
+            LoginTextBox.Text = currentUser.Login ?? string.Empty;
         }
 
         private void ProfileForm_Load(object sender, EventArgs e)
         {
             if (currentUser != null)
             {
-                NameTextBox.Text = currentUser.Name?.ToString() ?? String.Empty;
-                EmailTextBox.Text = currentUser.Email;
-                LoginTextBox.Text = currentUser.Login;
+                FillUserData(currentUser);
             }
             else
             {
-                MessageBox.Show("Пользователль - null");
+                MessageBox.Show("Пользователь - null");
             }
         }
-        
+
         private void EditProfileDataButton_Click(object sender, EventArgs e)
         {
-            using (var db = new ApplicationContext())
+            if (currentUser != null)
             {
-                if (currentUser != null)
+                try
                 {
-                    // Перезагрузка объекта из базы данных перед сохранением изменений
-                    db.Entry(currentUser).Reload();
-
                     currentUser.Name = NameTextBox.Text;
                     currentUser.Email = EmailTextBox.Text;
                     currentUser.Login = LoginTextBox.Text;
 
                     db.SaveChanges();
 
-                    logger.Info($"Пользователь {currentUser.Login} обновил свое имя на {NameTextBox.Text}");
+                    logger.Info($"Пользователь {currentUser.Login} обновил свои данные");
 
                     MessageBox.Show("Данные успешно обновлены");
                 }
-                db.Dispose(); // Закрываем контекст базы данных
-
+                catch (Exception ex)
+                {
+                    logger.Error($"Ошибка при обновлении данных пользователя: {ex.Message}");
+                    MessageBox.Show("Произошла ошибка при обновлении данных. Пожалуйста, попробуйте еще раз.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            else
+            {
+                MessageBox.Show("User - null");
+            }
+        }
 
-            
+        private void ChangePhotoButton_Click(object sender, EventArgs e)
+        {
+            // Открываем диалог выбора файла для выбора изображения
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.jpg, *.jpeg, *.png, *.gif)|*.jpg; *.jpeg; *.png; *.gif";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Считываем данные изображения в виде массива байт
+                byte[] photoBytes = File.ReadAllBytes(openFileDialog.FileName);
+
+                // Сохраняем данные изображения в свойство пользователя Photo
+                currentUser.Photo = photoBytes;
+
+                // Отображаем выбранное изображение на форме
+                ProfilePictureBox.Image = Image.FromStream(new MemoryStream(photoBytes));
+            }
         }
 
         private void ProfileForm_FormClosing(object sender, FormClosingEventArgs e)

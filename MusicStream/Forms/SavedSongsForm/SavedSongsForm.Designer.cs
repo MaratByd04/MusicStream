@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SavedSongsForm));
             SavedTracksListBox = new ListBox();
-            ShowFavoriteSongsButton = new Button();
             DeleteSongButton = new Button();
             SuspendLayout();
             // 
@@ -45,20 +44,6 @@
             SavedTracksListBox.Name = "SavedTracksListBox";
             SavedTracksListBox.Size = new Size(1131, 254);
             SavedTracksListBox.TabIndex = 0;
-            // 
-            // ShowFavoriteSongsButton
-            // 
-            ShowFavoriteSongsButton.BackColor = Color.Black;
-            ShowFavoriteSongsButton.FlatStyle = FlatStyle.Flat;
-            ShowFavoriteSongsButton.Font = new Font("Modern No. 20", 13.7999992F, FontStyle.Bold);
-            ShowFavoriteSongsButton.ForeColor = Color.PaleTurquoise;
-            ShowFavoriteSongsButton.Location = new Point(12, 500);
-            ShowFavoriteSongsButton.Name = "ShowFavoriteSongsButton";
-            ShowFavoriteSongsButton.Size = new Size(307, 60);
-            ShowFavoriteSongsButton.TabIndex = 1;
-            ShowFavoriteSongsButton.Text = "Показать избранные ";
-            ShowFavoriteSongsButton.UseVisualStyleBackColor = false;
-            ShowFavoriteSongsButton.Click += ShowFavoriteSongsButton_Click;
             // 
             // DeleteSongButton
             // 
@@ -83,7 +68,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1155, 679);
             Controls.Add(DeleteSongButton);
-            Controls.Add(ShowFavoriteSongsButton);
             Controls.Add(SavedTracksListBox);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -97,7 +81,6 @@
         #endregion
 
         private ListBox SavedTracksListBox;
-        private Button ShowFavoriteSongsButton;
         private Button DeleteSongButton;
     }
 }

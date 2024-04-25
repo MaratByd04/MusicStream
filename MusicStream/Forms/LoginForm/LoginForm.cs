@@ -30,42 +30,70 @@ namespace MusicStream
 
             RecommendationEngineProvider.Initialize();
         }
-        private void LogInButton_Click(object sender, EventArgs e)
+        public void LogInButton_Click(object sender, EventArgs e)
         {
-            using(var db = new ApplicationContext())
+            using (var db = new ApplicationContext())
             {
                 var login = LoginTextBox.Text;
                 var password = PasswordTextBox.Text;
 
-                // проверка на существование пользователя 
-                var user = db.Users.FirstOrDefault(u => u.Login == login && u.Password == password);
+                var user = CheckUserCredentials(db, login, password);
 
                 if (user != null)
                 {
                     PasswordTextBox.Clear();
-
-                    var menuForm = new MenuForm(user);
-                    menuForm.Show();
-
-                    this.Hide();   
+                    ShowMenuForm(user);
+                    this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Неверный логин или пароль!", "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ShowErrorMessage("Неверный логин или пароль!");
                     PasswordTextBox.Clear();
                 }
-            }   
+            }
+        }
+
+        public User CheckUserCredentials(ApplicationContext db, string login, string password)
+        {
+            return db.Users.FirstOrDefault(u => u.Login == login && u.Password == password);
+        }
+
+        private void ShowMenuForm(User user)
+        {
+            var menuForm = new MenuForm(user);
+            menuForm.Show();
+        }
+
+        private void ShowErrorMessage(string message)
+        {
+            MessageBox.Show(message, "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            var signInForm = new SignInForm();
-            signInForm.Show();
-            this.Hide();
+            // Открываем форму регистрации
+            OpenRegistrationForm();
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void OpenRegistrationForm()
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                if (!db.IsRegistrationOpen())
+                {
+                    MessageBox.Show("Форма регистрации уже используется другим пользователем.", "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Если форма регистрации доступна, открываем её
+                var signInForm = new SignInForm();
+                signInForm.Show();
+                this.Hide();
+            }
         }
     }
 }

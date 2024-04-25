@@ -176,12 +176,12 @@
 
         private Label MusicStreamLabel;
         private Label EnterLabel;
-        private TextBox EmailTextBox;
-        private TextBox PasswordTextBox;
-        private TextBox RepeatPasswordTextBox;
         private Label EmailLabel;
         private Label PasswordLabel;
         private Label RepeatPasswordLabel;
         private Button SignInButton;
+        public TextBox EmailTextBox;
+        public TextBox PasswordTextBox;
+        public TextBox RepeatPasswordTextBox;
     }
 }

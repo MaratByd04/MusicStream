@@ -7,8 +7,9 @@
         {
             InitializeComponent(); 
             currentUser = user;
+            ShowFavoriteSongs();
         }
-        private void ShowFavoriteSongsButton_Click(object sender, EventArgs e)
+        private void ShowFavoriteSongs()
         {
             SavedTracksListBox.Items.Clear();
 

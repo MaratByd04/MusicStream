@@ -37,6 +37,11 @@
             SearchButton = new Button();
             DurationComboBox = new ComboBox();
             SaveTrackButton = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // GenreComboBox
@@ -133,6 +138,61 @@
             SaveTrackButton.UseVisualStyleBackColor = true;
             SaveTrackButton.Click += SaveTrackButton_Click;
             // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 10.2F);
+            label1.ForeColor = Color.PaleTurquoise;
+            label1.Location = new Point(12, 173);
+            label1.Name = "label1";
+            label1.Size = new Size(206, 31);
+            label1.TabIndex = 8;
+            label1.Text = "Выберите жанр";
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 10.2F);
+            label2.ForeColor = Color.PaleTurquoise;
+            label2.Location = new Point(765, 173);
+            label2.Name = "label2";
+            label2.Size = new Size(224, 31);
+            label2.TabIndex = 9;
+            label2.Text = "Выберите настроение ";
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 10.2F);
+            label3.ForeColor = Color.PaleTurquoise;
+            label3.Location = new Point(510, 173);
+            label3.Name = "label3";
+            label3.Size = new Size(224, 31);
+            label3.TabIndex = 10;
+            label3.Text = "Выберите годы";
+            // 
+            // label4
+            // 
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 10.2F);
+            label4.ForeColor = Color.PaleTurquoise;
+            label4.Location = new Point(260, 173);
+            label4.Name = "label4";
+            label4.Size = new Size(206, 31);
+            label4.TabIndex = 11;
+            label4.Text = "Выберите страну";
+            // 
+            // label5
+            // 
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 10.2F);
+            label5.ForeColor = Color.PaleTurquoise;
+            label5.Location = new Point(1015, 173);
+            label5.Name = "label5";
+            label5.Size = new Size(224, 31);
+            label5.TabIndex = 12;
+            label5.Text = "Выберите длительность";
+            // 
             // RecommendationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -140,6 +200,11 @@
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1255, 698);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(SaveTrackButton);
             Controls.Add(DurationComboBox);
             Controls.Add(SearchButton);
@@ -163,9 +228,14 @@
         private ComboBox CountryComboBox;
         private ComboBox YearsComboBox;
         private ComboBox MoodComboBox;
-        private ListBox ResultsListBox;
         private Button SearchButton;
         private ComboBox DurationComboBox;
         private Button SaveTrackButton;
+        public ListBox ResultsListBox;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }

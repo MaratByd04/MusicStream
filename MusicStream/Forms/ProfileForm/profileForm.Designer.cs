@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             ProfilePictureBox = new PictureBox();
-            EditProfilePicture = new Button();
+            ChangePhotoButton = new Button();
             NameTextBox = new TextBox();
             EmailTextBox = new TextBox();
             LoginTextBox = new TextBox();
@@ -49,14 +49,15 @@
             ProfilePictureBox.TabIndex = 0;
             ProfilePictureBox.TabStop = false;
             // 
-            // EditProfilePicture
+            // ChangePhotoButton
             // 
-            EditProfilePicture.Location = new Point(57, 378);
-            EditProfilePicture.Name = "EditProfilePicture";
-            EditProfilePicture.Size = new Size(213, 56);
-            EditProfilePicture.TabIndex = 1;
-            EditProfilePicture.Text = "Изменить фото";
-            EditProfilePicture.UseVisualStyleBackColor = true;
+            ChangePhotoButton.Location = new Point(57, 378);
+            ChangePhotoButton.Name = "ChangePhotoButton";
+            ChangePhotoButton.Size = new Size(213, 56);
+            ChangePhotoButton.TabIndex = 1;
+            ChangePhotoButton.Text = "Изменить фото";
+            ChangePhotoButton.UseVisualStyleBackColor = true;
+            ChangePhotoButton.Click += ChangePhotoButton_Click;
             // 
             // NameTextBox
             // 
@@ -131,7 +132,7 @@
             Controls.Add(LoginTextBox);
             Controls.Add(EmailTextBox);
             Controls.Add(NameTextBox);
-            Controls.Add(EditProfilePicture);
+            Controls.Add(ChangePhotoButton);
             Controls.Add(ProfilePictureBox);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -148,13 +149,13 @@
         #endregion
 
         private PictureBox ProfilePictureBox;
-        private Button EditProfilePicture;
-        private TextBox NameTextBox;
-        private TextBox EmailTextBox;
-        private TextBox LoginTextBox;
+        private Button ChangePhotoButton;
         private Label NameLabel;
         private Label LoginLabel;
         private Label EmailLabel;
         private Button EditProfileDataButton;
+        public TextBox NameTextBox;
+        public TextBox EmailTextBox;
+        public TextBox LoginTextBox;
     }
 }
