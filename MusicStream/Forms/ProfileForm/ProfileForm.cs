@@ -10,13 +10,12 @@ namespace MusicStream
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         private User currentUser;
-        private ApplicationContext db;
 
-        public ProfileForm(User user, ApplicationContext db)
+
+        public ProfileForm(User user)
         {
             InitializeComponent();
             currentUser = user;
-            this.db = db;
         }
 
         public void FillUserData(User currentUser)
@@ -42,22 +41,25 @@ namespace MusicStream
         {
             if (currentUser != null)
             {
-                try
+                using (var db = new ApplicationContext())
                 {
-                    currentUser.Name = NameTextBox.Text;
-                    currentUser.Email = EmailTextBox.Text;
-                    currentUser.Login = LoginTextBox.Text;
+                    try
+                    {
+                        currentUser.Name = NameTextBox.Text;
+                        currentUser.Email = EmailTextBox.Text;
+                        currentUser.Login = LoginTextBox.Text;
 
-                    db.SaveChanges();
+                        db.SaveChanges();
 
-                    logger.Info($"Пользователь {currentUser.Login} обновил свои данные");
+                        logger.Info($"Пользователь {currentUser.Login} обновил свои данные");
 
-                    MessageBox.Show("Данные успешно обновлены");
-                }
-                catch (Exception ex)
-                {
-                    logger.Error($"Ошибка при обновлении данных пользователя: {ex.Message}");
-                    MessageBox.Show("Произошла ошибка при обновлении данных. Пожалуйста, попробуйте еще раз.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Данные успешно обновлены");
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.Error($"Ошибка при обновлении данных пользователя: {ex.Message}");
+                        MessageBox.Show("Произошла ошибка при обновлении данных. Пожалуйста, попробуйте еще раз.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             else

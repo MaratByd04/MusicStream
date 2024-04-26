@@ -57,7 +57,7 @@ namespace MusicStream
 
         private void ProfileButton_Click(object sender, EventArgs e)
         {
-            var profileForm = new ProfileForm(CurrentUser, new ApplicationContext());
+            var profileForm = new ProfileForm(CurrentUser);
             profileForm.Show();
             this.Hide();
         }
