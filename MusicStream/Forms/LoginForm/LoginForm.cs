@@ -70,7 +70,6 @@ namespace MusicStream
         }
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            // Открываем форму регистрации
             OpenRegistrationForm();
         }
 
@@ -83,13 +82,7 @@ namespace MusicStream
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                if (!db.IsRegistrationOpen())
-                {
-                    MessageBox.Show("Форма регистрации уже используется другим пользователем.", "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
 
-                // Если форма регистрации доступна, открываем её
                 var signInForm = new SignInForm();
                 signInForm.Show();
                 this.Hide();

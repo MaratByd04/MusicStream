@@ -64,9 +64,27 @@ namespace MusicStream
 
         private void CreateSongButton_Click(object sender, EventArgs e)
         {
-            var addSongForm = new AddSongForm(CurrentUser); // добавь юзера 
-            addSongForm.Show();
-            this.Hide();
+            // Проверяем доступность регистрации перед открытием формы добавления песни
+            if (CheckRegistrationAvailability())
+            {
+                var addSongForm = new AddSongForm(CurrentUser); // передаем текущего пользователя в форму
+                addSongForm.Show();
+                this.Hide();
+            }
+        }
+        private bool CheckRegistrationAvailability()
+        {
+            using (var db = new ApplicationContext())
+            {
+                var user = db.Users.FirstOrDefault(u => u.Id == CurrentUser.Id);
+
+                // Проверяем, доступна ли форма для регистрации
+                if (user == null || !user.IsRegistering)
+                {
+                    return true; // Форма доступна, если пользователь не найден или не зарегистрирован в данный момент
+                }
+            }
+            return false;
         }
 
         private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)

@@ -8,8 +8,10 @@ namespace MusicStream
         public AddSongForm(User currentUser)
         {
             InitializeComponent();
-
             CurrentUser = currentUser;
+
+            // Устанавливаем флаг регистрации для текущего пользователя
+            CurrentUser.IsRegistering = true;
 
         }
 
