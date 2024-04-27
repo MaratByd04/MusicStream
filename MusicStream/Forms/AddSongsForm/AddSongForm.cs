@@ -5,14 +5,17 @@ namespace MusicStream
     public partial class AddSongForm : Form
     {
         public User CurrentUser { get; set; }
+
+        public AddSongForm()
+        {
+            InitializeComponent();
+
+        }
+
         public AddSongForm(User currentUser)
         {
             InitializeComponent();
             CurrentUser = currentUser;
-
-            // Устанавливаем флаг регистрации для текущего пользователя
-            CurrentUser.IsRegistering = true;
-
         }
 
         private void AddSongForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,32 +30,15 @@ namespace MusicStream
         {
             if (AllFieldsFilled())
             {
-                using (var db = new ApplicationContext())
-                {
-                    var newSong = new Songs
-                    {
-                        SongName = SongNameTextBox.Text,
-                        Author = AuthorTextBox.Text,
-                        Genre = GenreTextBox.Text,
-                        SongCountry = SongCountryTextBox.Text,
-                        SongYears = SongYearsTextBox.Text,
-                        Mood = MoodTextBox.Text,
-                        Duration = DurationTextBox.Text
-                    };
-
-                    db.Songs.Add(newSong);
-                    db.SaveChanges();
-
-                    MessageBox.Show("Новая песня успешно сохранена!");
-                    ClearTextBoxes();
-                }
+                AddNewSong();
             }
             else
             {
-                MessageBox.Show("Пожалуйста, заполните все поля.");
+                ShowMessageBox("Пожалуйста, заполните все поля.");
             }
         }
-        private bool AllFieldsFilled()
+
+        public bool AllFieldsFilled()
         {
             return !string.IsNullOrEmpty(SongNameTextBox.Text) &&
                    !string.IsNullOrEmpty(AuthorTextBox.Text) &&
@@ -62,15 +48,45 @@ namespace MusicStream
                    !string.IsNullOrEmpty(MoodTextBox.Text) &&
                    !string.IsNullOrEmpty(DurationTextBox.Text);
         }
+
+        private void AddNewSong()
+        {
+            using (var db = new ApplicationContext())
+            {
+                var newSong = new Songs
+                {
+                    SongName = SongNameTextBox.Text,
+                    Author = AuthorTextBox.Text,
+                    Genre = GenreTextBox.Text,
+                    SongCountry = SongCountryTextBox.Text,
+                    SongYears = SongYearsTextBox.Text,
+                    Mood = MoodTextBox.Text,
+                    Duration = DurationTextBox.Text
+                };
+
+                db.Songs.Add(newSong);
+                db.SaveChanges();
+
+                ShowMessageBox("Новая песня успешно сохранена!");
+                ClearTextBoxes();
+            }
+        }
+
+        private void ShowMessageBox(string message)
+        {
+            MessageBox.Show(message);
+        }
+
         private void ClearTextBoxes()
         {
-            SongNameTextBox.Text = String.Empty;
-            AuthorTextBox.Text = String.Empty;
-            GenreTextBox.Text = String.Empty;
-            SongCountryTextBox.Text = String.Empty;
-            SongYearsTextBox.Text = String.Empty;
-            MoodTextBox.Text = String.Empty;
-            DurationTextBox.Text = String.Empty;
+            SongNameTextBox.Text = string.Empty;
+            AuthorTextBox.Text = string.Empty;
+            GenreTextBox.Text = string.Empty;
+            SongCountryTextBox.Text = string.Empty;
+            SongYearsTextBox.Text = string.Empty;
+            MoodTextBox.Text = string.Empty;
+            DurationTextBox.Text = string.Empty;
         }
+
     }
 }

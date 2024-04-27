@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MusicStream
-build_property.ProjectDir = C:\Users\Я\Documents\сын прогер горе в семье\MusicStream\MusicStream\
+build_property.ProjectDir = C:\Users\HOME\source\repos\MusicStream\MusicStream\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

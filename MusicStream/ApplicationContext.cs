@@ -21,23 +21,6 @@ namespace MusicStream
             optionsBuilder.UseSqlite("Data Source=users.db");
         }
 
-
-        // Проверка, свободна ли форма регистрации
-        public bool IsRegistrationOpen()
-        {
-            return !Users.Any(u => u.IsRegistering);
-        }
-
-        // Открытие формы регистрации
-        public void OpenRegistrationForm()
-        {
-            if (!IsRegistrationOpen())
-            {
-                MessageBox.Show("Форма регистрации уже используется другим пользователем.");
-                return;
-            }
-
-            // Ваш код для открытия формы регистрации
-        }
+        
     }
 }

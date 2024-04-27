@@ -11,6 +11,10 @@ namespace MusicStream
 
         private User currentUser;
 
+        public ProfileForm()
+        {
+            InitializeComponent();
+        }
 
         public ProfileForm(User user)
         {
@@ -68,6 +72,21 @@ namespace MusicStream
             }
         }
 
+        public byte[] ReadImageFromFile(string filePath)
+        {
+            return File.ReadAllBytes(filePath);
+        }
+
+        private void SetUserPhoto(byte[] photoBytes)
+        {
+            //currentUser.Photo = photoBytes;
+        }
+
+        private void DisplayImage(byte[] photoBytes)
+        {
+            ProfilePictureBox.Image = Image.FromStream(new MemoryStream(photoBytes));
+        }
+
         private void ChangePhotoButton_Click(object sender, EventArgs e)
         {
             // Открываем диалог выбора файла для выбора изображения
@@ -76,13 +95,13 @@ namespace MusicStream
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 // Считываем данные изображения в виде массива байт
-                byte[] photoBytes = File.ReadAllBytes(openFileDialog.FileName);
+                byte[] photoBytes = ReadImageFromFile(openFileDialog.FileName);
 
                 // Сохраняем данные изображения в свойство пользователя Photo
-                currentUser.Photo = photoBytes;
+                SetUserPhoto(photoBytes);
 
                 // Отображаем выбранное изображение на форме
-                ProfilePictureBox.Image = Image.FromStream(new MemoryStream(photoBytes));
+                DisplayImage(photoBytes);
             }
         }
 

@@ -8,7 +8,7 @@ namespace MusicStream
 
         public RecommendationForm()
         {
-
+            InitializeComponent();
         }
         public RecommendationForm(User user)
         {

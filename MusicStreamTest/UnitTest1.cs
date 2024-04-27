@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using MusicStream;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace MusicStreamTest
         public void FillUserData_PopulatesTextFieldsWithUserData()
         {
             // Arrange
-            var currentUser = new User
+            var currentUser = new MusicStream.User
             {
                 Name = "John Doe",
                 Email = "john.doe@example.com",
@@ -93,9 +94,9 @@ namespace MusicStreamTest
         {
             // Arrange
             var db = new MusicStream.ApplicationContext();
-            var login = "testuser";
-            var password = "testpassword";
-            var user = new User { Login = login, Password = password };
+            var login = "user";
+            var password = "password";
+            var user = new MusicStream.User { Login = login, Password = password };
             db.Users.Add(user);
             db.SaveChanges();
 
@@ -129,6 +130,36 @@ namespace MusicStreamTest
             Assert.IsNotNull(result);
             Assert.AreEqual(song, result);
         }
-    }
 
+        [TestMethod]
+        public void ReadImageFromFile_ShouldReturnByteArray()
+        {
+            // Arrange
+            var profileForm = new ProfileForm(); 
+            string imagePath = "test.jpg";
+
+            // Act
+            byte[] result = profileForm.ReadImageFromFile(imagePath);
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.IsTrue(result.Length > 0);
+        }
+
+        [TestMethod]
+        public void AllFieldsFilled_WhenNotAllFieldsAreFilled_ShouldReturnFalse()
+        {
+            // Arrange
+            var addsongForm = new AddSongForm(); 
+
+            // Act
+            addsongForm.SongNameTextBox.Text = "Song Name"; 
+            bool result = addsongForm.AllFieldsFilled();
+
+            // Assert
+            Assert.IsFalse(result); 
+        }
+
+        
+    }
 }

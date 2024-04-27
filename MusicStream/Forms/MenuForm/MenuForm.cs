@@ -76,13 +76,7 @@ namespace MusicStream
         {
             using (var db = new ApplicationContext())
             {
-                var user = db.Users.FirstOrDefault(u => u.Id == CurrentUser.Id);
-
-                // Проверяем, доступна ли форма для регистрации
-                if (user == null || !user.IsRegistering)
-                {
-                    return true; // Форма доступна, если пользователь не найден или не зарегистрирован в данный момент
-                }
+                var user = db.Users.FirstOrDefault(u => u.Id == CurrentUser.Id);         
             }
             return false;
         }
