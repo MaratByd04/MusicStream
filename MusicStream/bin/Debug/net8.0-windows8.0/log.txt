@@ -139,3 +139,133 @@
 2024-04-27 10:51:36.4367|INFO|MusicStream.Program|Программа запущена
 2024-04-27 11:09:55.1203|INFO|MusicStream.Program|Программа запущена
 2024-04-27 11:19:50.6577|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:12:31.7209|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:15:19.0180|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:22:19.8169|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:33:38.4995|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:33:50.4984|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:34:10.9967|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:34:16.3817|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:38:02.7277|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:38:14.7236|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:39:47.7928|INFO|MusicStream.Program|Программа запущена
+2024-04-27 14:39:57.6547|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:40:03.6235|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:40:04.7054|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 14:49:09.7574|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:03:32.3562|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:03:40.2993|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:03:40.4490|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:03:49.7561|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 15:04:04.7640|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:04:04.7667|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:04:53.9204|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:04:59.5526|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:04:59.7008|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:06:51.5237|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 15:10:45.8569|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:10:59.3678|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:10:59.5163|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:13:29.4614|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:13:36.6505|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:13:36.8014|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:13:47.9997|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: Object reference not set to an instance of an object.
+2024-04-27 15:15:24.9712|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:15:35.1218|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:15:35.2695|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:15:42.6040|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 15:18:00.8312|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:18:00.8312|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:18:05.7313|INFO|MusicStream.ProfileForm|Пользователь marat обновил свои данные
+2024-04-27 15:18:14.8359|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:18:14.8359|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:24:18.6537|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:24:25.6664|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:24:25.8208|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 15:25:56.7853|INFO|MusicStream.Program|Программа запущена
+2024-04-27 15:26:01.8721|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 15:26:02.0247|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 16:52:03.9986|INFO|MusicStream.Program|Программа запущена
+2024-04-27 16:52:12.3218|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 16:52:12.4707|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 17:02:15.1714|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:02:23.1244|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:02:23.2742|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 17:07:22.5179|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:07:28.5147|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:07:28.6647|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 17:08:09.2010|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+2024-04-27 17:09:27.3200|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:09:32.3036|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:09:32.5093|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 17:09:38.5197|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+2024-04-27 17:09:49.9395|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+2024-04-27 17:10:42.4958|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:10:48.4978|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:10:48.6555|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 17:13:07.0249|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:13:12.7985|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:13:12.9525|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 17:33:53.7884|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:34:15.1827|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:45:32.6509|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:45:38.7477|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:48:34.1738|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:48:39.8481|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:49:14.7904|INFO|MusicStream.Program|Программа запущена
+2024-04-27 17:49:19.4831|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 17:49:19.6372|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 19:41:51.1279|INFO|MusicStream.Program|Программа запущена
+2024-04-27 19:41:58.1982|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 19:41:58.4669|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 19:41:59.8930|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:42:03.7305|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:05.6786|INFO|MusicStream.Program|Программа запущена
+2024-04-27 19:43:12.4314|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 19:43:12.6599|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 19:43:14.1112|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:18.4396|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:26.1631|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:28.3708|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:30.2568|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:32.4230|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:43:34.5675|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:44:23.5186|INFO|MusicStream.Program|Программа запущена
+2024-04-27 19:44:32.1814|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 19:44:32.4627|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 19:44:33.9493|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:44:37.0300|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:44:39.1443|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:44:55.3759|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:45:00.5281|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:45:02.2275|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:45:04.2473|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 19:59:11.9360|INFO|MusicStream.Program|Программа запущена
+2024-04-27 19:59:18.5593|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 19:59:18.8024|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 20:24:12.1691|INFO|MusicStream.Program|Программа запущена
+2024-04-27 20:24:20.8418|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 20:24:21.0823|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 20:24:54.9064|INFO|MusicStream.Program|Программа запущена
+2024-04-27 20:25:02.0877|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 20:25:02.3322|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 20:25:03.8705|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:25:38.4217|INFO|MusicStream.Program|Программа запущена
+2024-04-27 20:25:44.7695|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 20:25:45.0121|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 20:25:46.0608|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:25:56.8354|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:27:53.8427|INFO|MusicStream.Program|Программа запущена
+2024-04-27 20:28:00.3283|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 20:28:00.5953|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 20:28:01.9590|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:28:07.7886|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:35:30.6931|INFO|MusicStream.Program|Программа запущена
+2024-04-27 20:35:37.1447|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-27 20:35:37.4169|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-27 20:35:52.7587|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:35:56.0370|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:35:59.8433|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:36:03.4651|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:36:05.9381|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-27 20:36:09.7040|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.

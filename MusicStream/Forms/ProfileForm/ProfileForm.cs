@@ -31,44 +31,39 @@ namespace MusicStream
 
         private void ProfileForm_Load(object sender, EventArgs e)
         {
-            if (currentUser != null)
-            {
-                FillUserData(currentUser);
-            }
-            else
-            {
-                MessageBox.Show("Пользователь - null");
-            }
+            FillUserData(currentUser);
         }
 
         private void EditProfileDataButton_Click(object sender, EventArgs e)
         {
-            if (currentUser != null)
+            using (var db = new ApplicationContext())
             {
-                using (var db = new ApplicationContext())
+                //try
                 {
-                    try
+                    var userToUpdate = db.Users.FirstOrDefault(u => u.Login == currentUser.Login);
+
+                    if (userToUpdate != null)
                     {
-                        currentUser.Name = NameTextBox.Text;
-                        currentUser.Email = EmailTextBox.Text;
-                        currentUser.Login = LoginTextBox.Text;
+                        userToUpdate.Name = NameTextBox.Text;
+                        userToUpdate.Email = EmailTextBox.Text;
+                        userToUpdate.Login = LoginTextBox.Text;
 
                         db.SaveChanges();
-
-                        logger.Info($"Пользователь {currentUser.Login} обновил свои данные");
+                        logger.Info($"Пользователь {userToUpdate.Login} обновил свои данные");
 
                         MessageBox.Show("Данные успешно обновлены");
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        logger.Error($"Ошибка при обновлении данных пользователя: {ex.Message}");
-                        MessageBox.Show("Произошла ошибка при обновлении данных. Пожалуйста, попробуйте еще раз.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Пользователь не найден");
                     }
                 }
-            }
-            else
-            {
-                MessageBox.Show("User - null");
+                /*
+                catch (Exception ex)
+                {
+                    logger.Error($"Ошибка при обновлении данных пользователя: {ex.Message}");
+                    MessageBox.Show($"Произошла ошибка при обновлении данных: {ex.Message} . Пожалуйста, попробуйте еще раз.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }*/
             }
         }
 
@@ -82,28 +77,25 @@ namespace MusicStream
             //currentUser.Photo = photoBytes;
         }
 
+        /*
         private void DisplayImage(byte[] photoBytes)
         {
             ProfilePictureBox.Image = Image.FromStream(new MemoryStream(photoBytes));
         }
-
         private void ChangePhotoButton_Click(object sender, EventArgs e)
         {
-            // Открываем диалог выбора файла для выбора изображения
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files (*.jpg, *.jpeg, *.png, *.gif)|*.jpg; *.jpeg; *.png; *.gif";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // Считываем данные изображения в виде массива байт
                 byte[] photoBytes = ReadImageFromFile(openFileDialog.FileName);
 
-                // Сохраняем данные изображения в свойство пользователя Photo
                 SetUserPhoto(photoBytes);
 
-                // Отображаем выбранное изображение на форме
                 DisplayImage(photoBytes);
             }
         }
+        */
 
         private void ProfileForm_FormClosing(object sender, FormClosingEventArgs e)
         {

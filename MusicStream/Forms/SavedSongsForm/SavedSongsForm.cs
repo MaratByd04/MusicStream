@@ -1,7 +1,11 @@
-﻿namespace MusicStream
+﻿using NLog;
+
+namespace MusicStream
 {
     public partial class SavedSongsForm : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         private User currentUser = null!;
         public SavedSongsForm(User user)
         {
@@ -44,9 +48,11 @@
                     if (savedSong != null)
                     {
                         db.SavedSongs.Remove(savedSong);
-                        db.SaveChanges();
+                        logger.Info("Выполняется попытка удаления песни из таблицы избранного в БД.");
 
-                        // Удалить элемент из списка
+                        db.SaveChanges();
+                        logger.Info("Удаление песни из таблицы избранного в БД прошло успешно.");
+
                         SavedTracksListBox.Items.Remove(selectedSong);
 
                         MessageBox.Show("Песня убрана из избранного!");

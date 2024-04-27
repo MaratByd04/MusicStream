@@ -12,17 +12,14 @@ namespace MusicStream.Forms.MenuForm
         {
             using (var db = new ApplicationContext())
             {
-                // Получаем песни для плейлиста "Спорт" с учетом нескольких параметров
                 var sportPlaylist = db.Songs
                     .Where(s => (s.Genre != "Classic" && s.Mood != "Depressive" && s.Mood != "Positive") &&
                                 (s.Genre == "Rock" || s.Mood == "Adrenaline" || s.Genre == "Rap"))
                     .ToList();
 
-                // Перемешиваем песни случайным образом
                 var random = new Random();
                 sportPlaylist = sportPlaylist.OrderBy(x => random.Next()).ToList();
 
-                // Выбираем только часть песен для разнообразия
                 var selectedSongs = sportPlaylist.Take(6).ToList();
 
                 return selectedSongs;

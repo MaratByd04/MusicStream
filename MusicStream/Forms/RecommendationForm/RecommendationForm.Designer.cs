@@ -47,7 +47,9 @@
             // GenreComboBox
             // 
             GenreComboBox.BackColor = Color.Black;
-            GenreComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
+            GenreComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            GenreComboBox.FlatStyle = FlatStyle.Flat;
+            GenreComboBox.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold);
             GenreComboBox.ForeColor = Color.PaleTurquoise;
             GenreComboBox.FormattingEnabled = true;
             GenreComboBox.Location = new Point(12, 222);
@@ -58,8 +60,9 @@
             // CountryComboBox
             // 
             CountryComboBox.BackColor = Color.Black;
+            CountryComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             CountryComboBox.FlatStyle = FlatStyle.Flat;
-            CountryComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
+            CountryComboBox.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold);
             CountryComboBox.ForeColor = Color.PaleTurquoise;
             CountryComboBox.FormattingEnabled = true;
             CountryComboBox.Location = new Point(260, 222);
@@ -70,7 +73,9 @@
             // YearsComboBox
             // 
             YearsComboBox.BackColor = Color.Black;
-            YearsComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
+            YearsComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            YearsComboBox.FlatStyle = FlatStyle.Flat;
+            YearsComboBox.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold);
             YearsComboBox.ForeColor = Color.PaleTurquoise;
             YearsComboBox.FormattingEnabled = true;
             YearsComboBox.Location = new Point(510, 222);
@@ -81,7 +86,9 @@
             // MoodComboBox
             // 
             MoodComboBox.BackColor = Color.Black;
-            MoodComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
+            MoodComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            MoodComboBox.FlatStyle = FlatStyle.Flat;
+            MoodComboBox.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold);
             MoodComboBox.ForeColor = Color.PaleTurquoise;
             MoodComboBox.FormattingEnabled = true;
             MoodComboBox.Location = new Point(765, 222);
@@ -117,7 +124,9 @@
             // DurationComboBox
             // 
             DurationComboBox.BackColor = Color.Black;
-            DurationComboBox.Font = new Font("Modern No. 20", 14F, FontStyle.Bold);
+            DurationComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            DurationComboBox.FlatStyle = FlatStyle.Flat;
+            DurationComboBox.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold);
             DurationComboBox.ForeColor = Color.PaleTurquoise;
             DurationComboBox.FormattingEnabled = true;
             DurationComboBox.Location = new Point(1015, 222);

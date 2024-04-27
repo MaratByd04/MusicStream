@@ -1,5 +1,4 @@
 ﻿using MusicStream.Forms.MenuForm;
-using System.Windows.Forms;
 
 namespace MusicStream
 {
@@ -27,7 +26,14 @@ namespace MusicStream
 
             foreach (var song in playlist)
             {
-                PlaylistListBox.Items.Add(song.SongName.ToString()); // Предполагается, что у песни есть свойство Title
+                if (song.SongName != null)
+                {
+                    PlaylistListBox.Items.Add(song.SongName.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("SongName = null");
+                }              
             }
 
             //передача в listBox самих объектов, а не строк
@@ -64,23 +70,13 @@ namespace MusicStream
 
         private void CreateSongButton_Click(object sender, EventArgs e)
         {
-            // Проверяем доступность регистрации перед открытием формы добавления песни
-            if (CheckRegistrationAvailability())
-            {
-                var addSongForm = new AddSongForm(CurrentUser); // передаем текущего пользователя в форму
-                addSongForm.Show();
-                this.Hide();
-            }
-        }
-        private bool CheckRegistrationAvailability()
-        {
-            using (var db = new ApplicationContext())
-            {
-                var user = db.Users.FirstOrDefault(u => u.Id == CurrentUser.Id);         
-            }
-            return false;
-        }
 
+            var addSongForm = new AddSongForm(CurrentUser);
+            addSongForm.Show();
+            this.Hide();
+
+        }
+       
         private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
         {   
             LoginForm.Instance.Show();

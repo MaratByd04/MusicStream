@@ -1,10 +1,13 @@
-﻿using NLog.LayoutRenderers.Wrappers;
+﻿using NLog;
+using NLog.LayoutRenderers.Wrappers;
 
 namespace MusicStream
 {
     public partial class RecommendationForm : Form
     {
-        private User? currentUser;
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
+        private User currentUser;
 
         public RecommendationForm()
         {
@@ -19,8 +22,10 @@ namespace MusicStream
         }
         private void PopulateDropdowns()
         {
-            using(var db = new ApplicationContext())
+            using (var db = new ApplicationContext())
             {
+                logger.Info("Подключение к БД прошло успешно.");
+
                 // установка значений характеристик
                 var genres = db.Songs.Select(s => s.Genre).Distinct().ToList();
                 var countries = db.Songs.Select(s => s.SongCountry).Distinct().ToList();
@@ -29,11 +34,11 @@ namespace MusicStream
                 var durations = db.Songs.Select(s => s.Duration).Distinct().ToList();
 
                 // добавление возможности оставить характеристику песни пустой
-                genres.Insert(0, "Ничего");
-                countries.Insert(0, "Ничего");
-                years.Insert(0, "Ничего");
-                moods.Insert(0, "Ничего");
-                durations.Insert(0, "Ничего");
+                genres.Insert(0, "Все");
+                countries.Insert(0, "Все");
+                years.Insert(0, "Все");
+                moods.Insert(0, "Все");
+                durations.Insert(0, "Все");
 
                 // заполнение combobox параметрами песен
                 GenreComboBox.Items.AddRange(genres.Cast<Object>().ToArray());
@@ -47,6 +52,8 @@ namespace MusicStream
         {
             using (var db = new ApplicationContext())
             {
+                logger.Info("Подключение к БД прошло успешно.");
+
                 // передача выбранных характеристик 
                 var selectedGenre = GenreComboBox.SelectedItem?.ToString() ?? string.Empty;
                 var selectedCountry = CountryComboBox.SelectedItem?.ToString() ?? string.Empty;
@@ -56,40 +63,42 @@ namespace MusicStream
 
                 var filteredSongs = db.Songs.AsQueryable();
 
-                if (!string.IsNullOrEmpty(selectedGenre) && selectedGenre != "Ничего")
+                if (!string.IsNullOrEmpty(selectedGenre) && selectedGenre != "Все")
                 {
                     filteredSongs = filteredSongs.Where(s => s.Genre == selectedGenre);
                 }
 
-                if (!string.IsNullOrEmpty(selectedCountry) && selectedCountry != "Ничего")
+                if (!string.IsNullOrEmpty(selectedCountry) && selectedCountry != "Все")
                 {
                     filteredSongs = filteredSongs.Where(s => s.SongCountry == selectedCountry);
                 }
 
-                if (!string.IsNullOrEmpty(selectedYears) && selectedYears != "Ничего")
+                if (!string.IsNullOrEmpty(selectedYears) && selectedYears != "Все")
                 {
                     filteredSongs = filteredSongs.Where(s => s.SongYears == selectedYears);
                 }
 
-                if (!string.IsNullOrEmpty(selectedMood) && selectedMood != "Ничего")
+                if (!string.IsNullOrEmpty(selectedMood) && selectedMood != "Все")
                 {
                     filteredSongs = filteredSongs.Where(s => s.Mood == selectedMood);
                 }
 
-                if (!string.IsNullOrEmpty(selectedDurations) && selectedDurations != "Ничего")
+                if (!string.IsNullOrEmpty(selectedDurations) && selectedDurations != "Все")
                 {
                     filteredSongs = filteredSongs.Where(s => s.Duration == selectedDurations);
                 }
-                
+
                 //передача в listBox самих объектов, а не строк
                 ResultsListBox.DataSource = filteredSongs.ToList();
-                ResultsListBox.DisplayMember = "SongName";  
+                ResultsListBox.DisplayMember = "SongName";
             }
         }
         private void SaveTrackButton_Click(object sender, EventArgs e)
         {
             using (var db = new ApplicationContext())
             {
+                logger.Info("Подключение к БД прошло успешно.");
+
                 var selectedSong = GetSelectedSongFromListBox();
 
                 if (selectedSong != null)
@@ -110,7 +119,7 @@ namespace MusicStream
             }
         }
 
-        public Songs GetSelectedSongFromListBox()
+        public Songs? GetSelectedSongFromListBox()
         {
             return ResultsListBox.SelectedItem as Songs;
         }
@@ -135,7 +144,10 @@ namespace MusicStream
             };
 
             db.SavedSongs.Add(savedSong);
+            logger.Info("Выполняется попытка добавить новую пенсю в таблицу БД.");
+
             db.SaveChanges();
+            logger.Info("Лобавление песни в таблицу БД прошло успешно.");
 
             MessageBox.Show("Песня добавлена!");
         }
@@ -146,5 +158,7 @@ namespace MusicStream
             menuForm.Show();
             this.Hide();
         }
+
+        
     }
 }

@@ -1,9 +1,12 @@
 using MusicStream.Forms.MenuForm;
+using NLog;
 
 namespace MusicStream
 {
     public partial class LoginForm : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         private RecommendationEngine recommendationEngine = null!;
         
         private static LoginForm? instance;
@@ -22,7 +25,6 @@ namespace MusicStream
                 return instance;
             }
         }
-
         
         public LoginForm()
         {
@@ -41,12 +43,17 @@ namespace MusicStream
 
                 if (user != null)
                 {
+                    logger.Info("Пользователь выполнил вход.");
+
                     PasswordTextBox.Clear();
                     ShowMenuForm(user);
+                    Console.WriteLine(user.Id);
                     this.Hide();
                 }
                 else
                 {
+                    logger.Info("Пользователь с введенными данными не найден.");
+
                     ShowErrorMessage("Неверный логин или пароль!");
                     PasswordTextBox.Clear();
                 }
@@ -55,6 +62,8 @@ namespace MusicStream
 
         public User CheckUserCredentials(ApplicationContext db, string login, string password)
         {
+            logger.Info("Проверяется существование пользователя.");
+
             return db.Users.FirstOrDefault(u => u.Login == login && u.Password == password);
         }
 
@@ -68,9 +77,10 @@ namespace MusicStream
         {
             MessageBox.Show(message, "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            OpenRegistrationForm();
+            OpenSignInForm();
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -78,11 +88,10 @@ namespace MusicStream
             Application.Exit();
         }
 
-        private void OpenRegistrationForm()
+        private void OpenSignInForm()
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-
                 var signInForm = new SignInForm();
                 signInForm.Show();
                 this.Hide();

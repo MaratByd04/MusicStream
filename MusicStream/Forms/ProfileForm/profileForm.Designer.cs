@@ -57,7 +57,7 @@
             ChangePhotoButton.TabIndex = 1;
             ChangePhotoButton.Text = "Изменить фото";
             ChangePhotoButton.UseVisualStyleBackColor = true;
-            ChangePhotoButton.Click += ChangePhotoButton_Click;
+            //ChangePhotoButton.Click += ChangePhotoButton_Click;
             // 
             // NameTextBox
             // 

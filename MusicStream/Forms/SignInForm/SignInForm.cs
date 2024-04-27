@@ -1,18 +1,19 @@
 ﻿using MusicStream.Forms.MenuForm;
+using NLog;
 
 namespace MusicStream
 {
     public partial class SignInForm : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         private readonly RecommendationEngine recommendationEngine;
 
 
         public SignInForm()
         {
             InitializeComponent();
-
             recommendationEngine = new RecommendationEngine();
-
         }
 
         public void SignInButton_Click(object sender, EventArgs e)
@@ -21,6 +22,7 @@ namespace MusicStream
             {
                 using (var db = new ApplicationContext())
                 {
+                    logger.Info("Выполняется проверка данных полученных из полей для регистрации.");
                     var email = EmailTextBox.Text;
                     var password = PasswordTextBox.Text;
                     var repeatPassword = RepeatPasswordTextBox.Text;
@@ -41,11 +43,13 @@ namespace MusicStream
                     }
 
                     RegisterNewUser(db, email, password);
+                    logger.Info("Пользователь успешно зарегистрирован.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Произошла ошибка при регистрации пользователя: {ex.Message}", "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                logger.Error($"Произошла ошибка при регистрации пользователя: { ex.Message}");
+                MessageBox.Show($"Произошла ошибка при регистрации пользователя.", "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

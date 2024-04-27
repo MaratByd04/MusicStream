@@ -41,5 +41,6 @@ namespace MusicStream
         /// свойство, хранящее список сохраненных песен 
         /// </summary>
         public ICollection<SavedSongs> SavedSongs { get; set; } = new List<SavedSongs>();
+
     }
 }
