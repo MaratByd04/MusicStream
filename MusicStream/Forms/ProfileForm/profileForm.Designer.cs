@@ -43,17 +43,19 @@
             // 
             // ProfilePictureBox
             // 
-            ProfilePictureBox.Location = new Point(39, 155);
+            ProfilePictureBox.Location = new Point(34, 116);
+            ProfilePictureBox.Margin = new Padding(3, 2, 3, 2);
             ProfilePictureBox.Name = "ProfilePictureBox";
-            ProfilePictureBox.Size = new Size(251, 188);
+            ProfilePictureBox.Size = new Size(220, 141);
             ProfilePictureBox.TabIndex = 0;
             ProfilePictureBox.TabStop = false;
             // 
             // ChangePhotoButton
             // 
-            ChangePhotoButton.Location = new Point(57, 378);
+            ChangePhotoButton.Location = new Point(50, 284);
+            ChangePhotoButton.Margin = new Padding(3, 2, 3, 2);
             ChangePhotoButton.Name = "ChangePhotoButton";
-            ChangePhotoButton.Size = new Size(213, 56);
+            ChangePhotoButton.Size = new Size(186, 42);
             ChangePhotoButton.TabIndex = 1;
             ChangePhotoButton.Text = "Изменить фото";
             ChangePhotoButton.UseVisualStyleBackColor = true;
@@ -62,9 +64,9 @@
             // 
             NameLabel.BackColor = Color.Transparent;
             NameLabel.ForeColor = Color.PaleTurquoise;
-            NameLabel.Location = new Point(392, 197);
+            NameLabel.Location = new Point(343, 148);
             NameLabel.Name = "NameLabel";
-            NameLabel.Size = new Size(144, 22);
+            NameLabel.Size = new Size(126, 16);
             NameLabel.TabIndex = 5;
             NameLabel.Text = "Имя";
             // 
@@ -72,9 +74,9 @@
             // 
             LoginLabel.BackColor = Color.Transparent;
             LoginLabel.ForeColor = Color.PaleTurquoise;
-            LoginLabel.Location = new Point(392, 286);
+            LoginLabel.Location = new Point(343, 214);
             LoginLabel.Name = "LoginLabel";
-            LoginLabel.Size = new Size(144, 22);
+            LoginLabel.Size = new Size(126, 16);
             LoginLabel.TabIndex = 6;
             LoginLabel.Text = "Логин";
             // 
@@ -82,48 +84,52 @@
             // 
             EmailLabel.BackColor = Color.Transparent;
             EmailLabel.ForeColor = Color.PaleTurquoise;
-            EmailLabel.Location = new Point(392, 380);
+            EmailLabel.Location = new Point(343, 285);
             EmailLabel.Name = "EmailLabel";
-            EmailLabel.Size = new Size(144, 22);
+            EmailLabel.Size = new Size(126, 16);
             EmailLabel.TabIndex = 7;
             EmailLabel.Text = "Почта";
             // 
             // EditProfileDataButton
             // 
-            EditProfileDataButton.Location = new Point(480, 461);
+            EditProfileDataButton.Location = new Point(420, 346);
+            EditProfileDataButton.Margin = new Padding(3, 2, 3, 2);
             EditProfileDataButton.Name = "EditProfileDataButton";
-            EditProfileDataButton.Size = new Size(290, 37);
+            EditProfileDataButton.Size = new Size(254, 28);
             EditProfileDataButton.TabIndex = 8;
             EditProfileDataButton.Text = "Редактировать профиль";
             EditProfileDataButton.Click += EditProfileDataButton_Click;
             // 
             // ProfileNameTextBox
             // 
-            ProfileNameTextBox.Location = new Point(392, 234);
+            ProfileNameTextBox.Location = new Point(343, 176);
+            ProfileNameTextBox.Margin = new Padding(3, 2, 3, 2);
             ProfileNameTextBox.Name = "ProfileNameTextBox";
-            ProfileNameTextBox.Size = new Size(493, 27);
+            ProfileNameTextBox.Size = new Size(432, 23);
             ProfileNameTextBox.TabIndex = 12;
             // 
             // ProfileLoginTextBox
             // 
-            ProfileLoginTextBox.Location = new Point(392, 316);
+            ProfileLoginTextBox.Location = new Point(343, 237);
+            ProfileLoginTextBox.Margin = new Padding(3, 2, 3, 2);
             ProfileLoginTextBox.Name = "ProfileLoginTextBox";
-            ProfileLoginTextBox.Size = new Size(493, 27);
+            ProfileLoginTextBox.Size = new Size(432, 23);
             ProfileLoginTextBox.TabIndex = 13;
             // 
             // ProfileEmailTextBox
             // 
-            ProfileEmailTextBox.Location = new Point(392, 405);
+            ProfileEmailTextBox.Location = new Point(343, 304);
+            ProfileEmailTextBox.Margin = new Padding(3, 2, 3, 2);
             ProfileEmailTextBox.Name = "ProfileEmailTextBox";
-            ProfileEmailTextBox.Size = new Size(493, 27);
+            ProfileEmailTextBox.Size = new Size(432, 23);
             ProfileEmailTextBox.TabIndex = 14;
             // 
             // ProfileForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(954, 710);
+            ClientSize = new Size(835, 532);
             Controls.Add(ProfileEmailTextBox);
             Controls.Add(ProfileLoginTextBox);
             Controls.Add(ProfileNameTextBox);
@@ -133,6 +139,7 @@
             Controls.Add(NameLabel);
             Controls.Add(ChangePhotoButton);
             Controls.Add(ProfilePictureBox);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ProfileForm";
@@ -153,8 +160,8 @@
         private Label LoginLabel;
         private Label EmailLabel;
         private Button EditProfileDataButton;
-        private TextBox ProfileNameTextBox;
-        private TextBox ProfileLoginTextBox;
-        private TextBox ProfileEmailTextBox;
+        public TextBox ProfileLoginTextBox;
+        public TextBox ProfileEmailTextBox;
+        public TextBox ProfileNameTextBox;
     }
 }

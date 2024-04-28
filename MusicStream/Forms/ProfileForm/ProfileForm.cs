@@ -65,6 +65,7 @@ namespace MusicStream
         }
         
 
+
         private void ProfileForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             var menuForm = new MenuForm(currentUser);

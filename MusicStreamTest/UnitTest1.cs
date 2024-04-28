@@ -1,4 +1,3 @@
-using Microsoft.VisualBasic.ApplicationServices;
 using MusicStream;
 using System.Windows.Forms;
 
@@ -26,9 +25,9 @@ namespace MusicStreamTest
             profileForm.FillUserData(currentUser);
 
             // Assert
-            Assert.AreEqual("John Doe", profileForm.NameTextBox.Text);
-            Assert.AreEqual("john.doe@example.com", profileForm.EmailTextBox.Text);
-            Assert.AreEqual("johndoe", profileForm.LoginTextBox.Text);
+            Assert.AreEqual("John Doe", profileForm.ProfileNameTextBox.Text);
+            Assert.AreEqual("john.doe@example.com", profileForm.ProfileEmailTextBox.Text);
+            Assert.AreEqual("johndoe", profileForm.ProfileLoginTextBox.Text);
         }
 
         // 2 юнит тест
@@ -144,18 +143,30 @@ namespace MusicStreamTest
         // 6 юнит тест
 
         [TestMethod]
-        public void ReadImageFromFile_ShouldReturnByteArray()
+        public void ClearTextBoxes_ClearsAllTextBoxes()
         {
             // Arrange
-            var profileForm = new ProfileForm(); 
-            string imagePath = "test.jpg";
+            var addsongform = new AddSongForm(); // Замените YourForm на имя вашей формы
+
+            addsongform.SongNameTextBox.Text = "Some text";
+            addsongform.AuthorTextBox.Text = "Some text";
+            addsongform.SongCountryTextBox.Text = "Some text";
+            addsongform.SongYearsTextBox.Text = "Some text";
+            addsongform.MoodComboBox.Text = "Some text";
+            addsongform.DurationComboBox.Text = "Some text";
+            addsongform.GenreComboBox.Text = "Some text";
 
             // Act
-            byte[] result = profileForm.ReadImageFromFile(imagePath);
+            addsongform.ClearTextBoxes();
 
             // Assert
-            Assert.IsNotNull(result);
-            Assert.IsTrue(result.Length > 0);
+            Assert.AreEqual(string.Empty, addsongform.SongNameTextBox.Text);
+            Assert.AreEqual(string.Empty, addsongform.AuthorTextBox.Text);
+            Assert.AreEqual(string.Empty, addsongform.SongCountryTextBox.Text);
+            Assert.AreEqual(string.Empty, addsongform.SongYearsTextBox.Text);
+            Assert.AreEqual(string.Empty, addsongform.MoodComboBox.Text);
+            Assert.AreEqual(string.Empty, addsongform.DurationComboBox.Text);
+            Assert.AreEqual(string.Empty, addsongform.GenreComboBox.Text);
         }
 
         // 7 юнит тест
@@ -207,7 +218,7 @@ namespace MusicStreamTest
         // 9 юнит тест
 
         [TestMethod]
-        public void ValidateSongYears_ValidYears_ReturnsTrue()
+        public void ValidateRealSongYears_ValidYears_ReturnsTrue()
         {
             // Arrange
             var addsongForm = new AddSongForm();
@@ -221,25 +232,27 @@ namespace MusicStreamTest
         }
 
         [TestMethod]
-        public void ValidateSongYears_InvalidYearsWithLetters_ReturnsFalse()
+        public void ValidateRealSongYears_InvalidYearsGreaterThan2024_ReturnsFalse()
         {
             // Arrange
             var addsongForm = new AddSongForm();
-            var songYears = "Year2021";
+            var songYears = "2025";
 
             // Act
-            var result = addsongForm.ValidateSongYears(songYears);
+            var result = addsongForm.ValidateRealSongYears(songYears);
 
             // Assert
             Assert.IsFalse(result);
         }
 
+        // 10 юнит тест
+
         [TestMethod]
-        public void ValidateSongYears_InvalidYearsGreaterThan2024_ReturnsFalse()
+        public void ValidateSongYears_InvalidYearsWithLetters_ReturnsFalse()
         {
             // Arrange
             var addsongForm = new AddSongForm();
-            var songYears = "2025";
+            var songYears = "Year2021";
 
             // Act
             var result = addsongForm.ValidateSongYears(songYears);

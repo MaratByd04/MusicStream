@@ -127,7 +127,7 @@
             MessageBox.Show(message);
         }
 
-        private void ClearTextBoxes()
+        public void ClearTextBoxes()
         {
             SongNameTextBox.Text = string.Empty;
             AuthorTextBox.Text = string.Empty;
@@ -155,7 +155,7 @@
             MoodComboBox.Items.Add("Positive");
         }
 
-        private void PopulateDurationComboBox()
+        public void PopulateDurationComboBox()
         {
             DurationComboBox.Items.Add("1-5 min");
             DurationComboBox.Items.Add("5-10 min");
