@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FmjFqP0Gr9ZjtJRUGCwQ2UYmWifyDPDgIT7uL29FuD5z6qhh0KsRGN4L6TRS4cYMjcfriC51fj5yrhig8FcMNw==",
+  "dgSpecHash": "DQ9QueYjLr55MwvHf5CBL8IgI67aeUpA9o/Vr0HXPi6y3SZFAS4Skq44PABo/U9X1dSAd+qosf2Z3gExT6tTNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStream\\MusicStream.csproj",
+  "projectFilePath": "C:\\Users\\HOME\\source\\repos\\MusicStream1\\MusicStream\\MusicStream.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HOME\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

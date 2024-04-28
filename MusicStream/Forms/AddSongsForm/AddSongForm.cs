@@ -52,20 +52,38 @@ namespace MusicStream
                    GenreComboBox.SelectedIndex != -1;
         }
 
+        public bool ValidateSongCountry(string songCountry)
+        {
+            if (songCountry.Any(char.IsDigit))
+            {
+                MessageBox.Show("Название страны не должно содержать цифр.");
+                return false;
+            }
+            return true;
+        }
+
+        public bool ValidateSongYears(string songYears)
+        {
+            if (songYears.Any(char.IsLetter) || int.Parse(songYears) > 2024)
+            {
+                MessageBox.Show("Годы не должны содержать буквы или быть больше 2024.");
+                return false;
+            }
+            return true;
+        }
+
         private void AddNewSong()
         {
             using (var db = new ApplicationContext())
             {
-                if (SongCountryTextBox.Text.Any(char.IsDigit))
+                if (!ValidateSongCountry(SongCountryTextBox.Text))
                 {
-                    MessageBox.Show("Название страны не должно содержать цифр.");
                     SongCountryTextBox.Text = string.Empty;
                     return;
                 }
 
-                if (SongYearsTextBox.Text.Any(char.IsLetter) || int.Parse(SongYearsTextBox.Text) > 2024)
+                if (!ValidateSongYears(SongYearsTextBox.Text))
                 {
-                    MessageBox.Show("Годы не должны содержать букв.");
                     SongYearsTextBox.Text = string.Empty;
                     return;
                 }

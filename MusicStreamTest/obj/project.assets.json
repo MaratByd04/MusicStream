@@ -2425,9 +2425,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStreamTest\\MusicStreamTest.csproj",
+      "projectUniqueName": "C:\\Users\\HOME\\source\\repos\\MusicStream1\\MusicStreamTest\\MusicStreamTest.csproj",
       "projectName": "MusicStreamTest",
-      "projectPath": "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStreamTest\\MusicStreamTest.csproj",
+      "projectPath": "C:\\Users\\HOME\\source\\repos\\MusicStream1\\MusicStreamTest\\MusicStreamTest.csproj",
       "packagesPath": "C:\\Users\\HOME\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStreamTest\\obj\\",
       "projectStyle": "PackageReference",
@@ -2450,8 +2450,8 @@
         "net8.0-windows8.0": {
           "targetAlias": "net8.0-windows8.0",
           "projectReferences": {
-            "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStream\\MusicStream.csproj": {
-              "projectPath": "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStream\\MusicStream.csproj"
+            "C:\\Users\\HOME\\source\\repos\\MusicStream1\\MusicStream\\MusicStream.csproj": {
+              "projectPath": "C:\\Users\\HOME\\source\\repos\\MusicStream1\\MusicStream\\MusicStream.csproj"
             }
           }
         }

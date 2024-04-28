@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LO3O9xc0anJjcWPq6h0tUBI91cX4pgoro8ZZoP3pFc8FIHx8YZhuZ+RZnzifhD1+O78nUKuQbsQWZqGU1k0VzQ==",
+  "dgSpecHash": "MBqXKc68u+9aykVJuYXKiUtLFrbVY7GQguboH5UA95Uzqb61wl7OOfyRr6aq+rDJIY1TKCSr0gVLOTga8QhyYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HOME\\Source\\Repos\\MusicStream1\\MusicStreamTest\\MusicStreamTest.csproj",
+  "projectFilePath": "C:\\Users\\HOME\\source\\repos\\MusicStream1\\MusicStreamTest\\MusicStreamTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HOME\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

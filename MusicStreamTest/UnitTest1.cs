@@ -8,6 +8,8 @@ namespace MusicStreamTest
     [TestClass]
     public class UnitTest1
     {
+        // 1 юнит тест
+
         [TestMethod]
         public void FillUserData_PopulatesTextFieldsWithUserData()
         {
@@ -28,6 +30,8 @@ namespace MusicStreamTest
             Assert.AreEqual("john.doe@example.com", profileForm.EmailTextBox.Text);
             Assert.AreEqual("johndoe", profileForm.LoginTextBox.Text);
         }
+
+        // 2 юнит тест
 
         [TestMethod]
         public void CheckPasswordMatch_PasswordsMatch_ReturnsTrue()
@@ -63,6 +67,8 @@ namespace MusicStreamTest
             Assert.IsFalse(result);
         }
 
+        // 3 юнит тест
+
         [TestMethod]
         public void CheckEmailValidity_ValidEmail_ReturnsTrue()
         {
@@ -89,6 +95,8 @@ namespace MusicStreamTest
             Assert.IsFalse(result);
         }
 
+        // 4 юнит тест
+
         [TestMethod]
         public void CheckUserCredentials_UserExists_ReturnsUser()
         {
@@ -111,6 +119,8 @@ namespace MusicStreamTest
             Assert.AreEqual(password, result.Password);
         }
 
+        // 5 юнит тест
+
         [TestMethod]
         public void GetSelectedSongFromListBox_ReturnsSelectedSong()
         {
@@ -131,6 +141,8 @@ namespace MusicStreamTest
             Assert.AreEqual(song, result);
         }
 
+        // 6 юнит тест
+
         [TestMethod]
         public void ReadImageFromFile_ShouldReturnByteArray()
         {
@@ -146,6 +158,8 @@ namespace MusicStreamTest
             Assert.IsTrue(result.Length > 0);
         }
 
+        // 7 юнит тест
+
         [TestMethod]
         public void AllFieldsFilled_WhenNotAllFieldsAreFilled_ShouldReturnFalse()
         {
@@ -160,6 +174,78 @@ namespace MusicStreamTest
             Assert.IsFalse(result); 
         }
 
-        
+        // 8 юнит тест
+
+        [TestMethod]
+        public void ValidateSongCountry_ValidCountry_ReturnsTrue()
+        {
+            // Arrange
+            var addsongForm = new AddSongForm();
+            var songCountry = "USA";
+
+            // Act
+            var result = addsongForm.ValidateSongCountry(songCountry);
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ValidateSongCountry_CountryWithDigits_ReturnsFalse()
+        {
+            // Arrange
+            var addsongForm = new AddSongForm();
+            var songCountry = "UK2021";
+
+            // Act
+            var result = addsongForm.ValidateSongCountry(songCountry);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        // 9 юнит тест
+
+        [TestMethod]
+        public void ValidateSongYears_ValidYears_ReturnsTrue()
+        {
+            // Arrange
+            var addsongForm = new AddSongForm();
+            var songYears = "2020";
+
+            // Act
+            var result = addsongForm.ValidateSongYears(songYears);
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ValidateSongYears_InvalidYearsWithLetters_ReturnsFalse()
+        {
+            // Arrange
+            var addsongForm = new AddSongForm();
+            var songYears = "Year2021";
+
+            // Act
+            var result = addsongForm.ValidateSongYears(songYears);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void ValidateSongYears_InvalidYearsGreaterThan2024_ReturnsFalse()
+        {
+            // Arrange
+            var addsongForm = new AddSongForm();
+            var songYears = "2025";
+
+            // Act
+            var result = addsongForm.ValidateSongYears(songYears);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
     }
-}
+} 
