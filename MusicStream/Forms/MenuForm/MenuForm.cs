@@ -5,17 +5,12 @@ namespace MusicStream
     public partial class MenuForm : Form
     {
         private readonly RecommendationEngine recommendationEngine;
-
-        /// <summary>
-        /// Свойство, которое хранит текущего пользователя
-        /// </summary>
         public User CurrentUser { get; set; }
 
         public MenuForm(User user)
         {
             InitializeComponent();
             CurrentUser = user;
-
             recommendationEngine = RecommendationEngineProvider.GetRecommendationEngine();
         }
 
@@ -141,10 +136,6 @@ namespace MusicStream
                         {
                             MessageBox.Show("Эта песня уже добавлена в избранное.");
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Что-то пошло не так");
                     }
                 }
                 else

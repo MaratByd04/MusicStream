@@ -32,7 +32,6 @@
             SongNameTextBox = new TextBox();
             SongCountryTextBox = new TextBox();
             SongYearsTextBox = new TextBox();
-            DurationTextBox = new TextBox();
             AuthorTextBox = new TextBox();
             SongNameLabel = new Label();
             label1 = new Label();
@@ -44,6 +43,7 @@
             AddNewSongButton = new Button();
             GenreComboBox = new ComboBox();
             MoodComboBox = new ComboBox();
+            DurationComboBox = new ComboBox();
             SuspendLayout();
             // 
             // SongNameTextBox
@@ -66,13 +66,6 @@
             SongYearsTextBox.Name = "SongYearsTextBox";
             SongYearsTextBox.Size = new Size(643, 27);
             SongYearsTextBox.TabIndex = 2;
-            // 
-            // DurationTextBox
-            // 
-            DurationTextBox.Location = new Point(115, 621);
-            DurationTextBox.Name = "DurationTextBox";
-            DurationTextBox.Size = new Size(643, 27);
-            DurationTextBox.TabIndex = 4;
             // 
             // AuthorTextBox
             // 
@@ -181,12 +174,22 @@
             MoodComboBox.Size = new Size(643, 28);
             MoodComboBox.TabIndex = 16;
             // 
+            // DurationComboBox
+            // 
+            DurationComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            DurationComboBox.FormattingEnabled = true;
+            DurationComboBox.Location = new Point(115, 623);
+            DurationComboBox.Name = "DurationComboBox";
+            DurationComboBox.Size = new Size(643, 28);
+            DurationComboBox.TabIndex = 17;
+            // 
             // AddSongForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1186, 699);
+            Controls.Add(DurationComboBox);
             Controls.Add(MoodComboBox);
             Controls.Add(GenreComboBox);
             Controls.Add(AddNewSongButton);
@@ -198,7 +201,6 @@
             Controls.Add(label1);
             Controls.Add(SongNameLabel);
             Controls.Add(AuthorTextBox);
-            Controls.Add(DurationTextBox);
             Controls.Add(SongYearsTextBox);
             Controls.Add(SongCountryTextBox);
             Controls.Add(SongNameTextBox);
@@ -215,7 +217,6 @@
         #endregion
         private TextBox SongCountryTextBox;
         private TextBox SongYearsTextBox;
-        private TextBox DurationTextBox;
         private TextBox AuthorTextBox;
         private Label SongNameLabel;
         private Label label1;
@@ -228,5 +229,6 @@
         public TextBox SongNameTextBox;
         private ComboBox GenreComboBox;
         private ComboBox MoodComboBox;
+        private ComboBox DurationComboBox;
     }
 }

@@ -285,3 +285,37 @@
 2024-04-28 12:04:53.5765|INFO|MusicStream.Program|Программа запущена
 2024-04-28 12:05:06.4478|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
 2024-04-28 12:05:06.9642|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:04:32.6083|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:04:46.2649|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:04:51.5017|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:04:51.6585|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:05:28.4521|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:05:31.9887|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:05:38.3664|INFO|MusicStream.SavedSongsForm|Выполняется попытка удаления песни из таблицы избранного в БД.
+2024-04-28 13:05:38.4066|INFO|MusicStream.SavedSongsForm|Удаление песни из таблицы избранного в БД прошло успешно.
+2024-04-28 13:05:40.6001|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:05:42.7478|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:05:45.8642|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:05:45.8795|INFO|MusicStream.RecommendationForm|Выполняется попытка добавить новую пенсю в таблицу БД.
+2024-04-28 13:05:45.8940|INFO|MusicStream.RecommendationForm|Лобавление песни в таблицу БД прошло успешно.
+2024-04-28 13:12:42.1342|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:12:47.4807|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:12:47.6293|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:13:11.1139|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:13:17.5071|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:13:17.6580|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:30:15.0987|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:30:21.2553|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:30:21.4052|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:30:22.1484|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:30:47.8198|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:30:53.8340|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:30:53.9861|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:32:18.5551|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:32:26.0858|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:32:28.3077|INFO|MusicStream.RecommendationForm|Подключение к БД прошло успешно.
+2024-04-28 13:32:28.3253|INFO|MusicStream.RecommendationForm|Выполняется попытка добавить новую пенсю в таблицу БД.
+2024-04-28 13:32:28.3253|INFO|MusicStream.RecommendationForm|Лобавление песни в таблицу БД прошло успешно.
+2024-04-28 13:33:36.7779|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:33:43.2966|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:33:43.4483|INFO|MusicStream.LoginForm|Пользователь выполнил вход.

@@ -33,14 +33,8 @@ namespace MusicStream
         public string? Password { get; set; }
 
         /// <summary>
-        /// Фотография пользователя в виде массива байт (BLOB)
-        /// </summary>
-        //public byte[]? Photo { get; set; }
-
-        /// <summary>
         /// свойство, хранящее список сохраненных песен 
         /// </summary>
         public ICollection<SavedSongs> SavedSongs { get; set; } = new List<SavedSongs>();
-
     }
 }

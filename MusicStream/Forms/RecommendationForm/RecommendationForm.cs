@@ -1,5 +1,4 @@
 ﻿using NLog;
-using NLog.LayoutRenderers.Wrappers;
 
 namespace MusicStream
 {
@@ -158,7 +157,5 @@ namespace MusicStream
             menuForm.Show();
             this.Hide();
         }
-
-        
     }
 }

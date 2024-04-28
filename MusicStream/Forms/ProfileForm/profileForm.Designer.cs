@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             ProfilePictureBox = new PictureBox();
             ChangePhotoButton = new Button();
-            NameTextBox = new TextBox();
-            EmailTextBox = new TextBox();
-            LoginTextBox = new TextBox();
             NameLabel = new Label();
             LoginLabel = new Label();
             EmailLabel = new Label();
             EditProfileDataButton = new Button();
+            ProfileNameLabel = new Label();
+            ProfileLoginLabel = new Label();
+            ProfileEmailLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -57,28 +57,6 @@
             ChangePhotoButton.TabIndex = 1;
             ChangePhotoButton.Text = "Изменить фото";
             ChangePhotoButton.UseVisualStyleBackColor = true;
-            //ChangePhotoButton.Click += ChangePhotoButton_Click;
-            // 
-            // NameTextBox
-            // 
-            NameTextBox.Location = new Point(392, 235);
-            NameTextBox.Name = "NameTextBox";
-            NameTextBox.Size = new Size(496, 27);
-            NameTextBox.TabIndex = 2;
-            // 
-            // EmailTextBox
-            // 
-            EmailTextBox.Location = new Point(392, 410);
-            EmailTextBox.Name = "EmailTextBox";
-            EmailTextBox.Size = new Size(496, 27);
-            EmailTextBox.TabIndex = 3;
-            // 
-            // LoginTextBox
-            // 
-            LoginTextBox.Location = new Point(392, 321);
-            LoginTextBox.Name = "LoginTextBox";
-            LoginTextBox.Size = new Size(496, 27);
-            LoginTextBox.TabIndex = 4;
             // 
             // NameLabel
             // 
@@ -117,7 +95,27 @@
             EditProfileDataButton.Size = new Size(290, 37);
             EditProfileDataButton.TabIndex = 8;
             EditProfileDataButton.Text = "Редактировать профиль";
-            EditProfileDataButton.Click += EditProfileDataButton_Click;
+            // 
+            // ProfileNameLabel
+            // 
+            ProfileNameLabel.Location = new Point(392, 233);
+            ProfileNameLabel.Name = "ProfileNameLabel";
+            ProfileNameLabel.Size = new Size(493, 28);
+            ProfileNameLabel.TabIndex = 9;
+            // 
+            // ProfileLoginLabel
+            // 
+            ProfileLoginLabel.Location = new Point(392, 315);
+            ProfileLoginLabel.Name = "ProfileLoginLabel";
+            ProfileLoginLabel.Size = new Size(493, 28);
+            ProfileLoginLabel.TabIndex = 10;
+            // 
+            // ProfileEmailLabel
+            // 
+            ProfileEmailLabel.Location = new Point(392, 406);
+            ProfileEmailLabel.Name = "ProfileEmailLabel";
+            ProfileEmailLabel.Size = new Size(493, 28);
+            ProfileEmailLabel.TabIndex = 11;
             // 
             // ProfileForm
             // 
@@ -125,13 +123,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(954, 710);
+            Controls.Add(ProfileEmailLabel);
+            Controls.Add(ProfileLoginLabel);
+            Controls.Add(ProfileNameLabel);
             Controls.Add(EditProfileDataButton);
             Controls.Add(EmailLabel);
             Controls.Add(LoginLabel);
             Controls.Add(NameLabel);
-            Controls.Add(LoginTextBox);
-            Controls.Add(EmailTextBox);
-            Controls.Add(NameTextBox);
             Controls.Add(ChangePhotoButton);
             Controls.Add(ProfilePictureBox);
             MaximizeBox = false;
@@ -143,7 +141,6 @@
             Load += ProfileForm_Load;
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -154,8 +151,8 @@
         private Label LoginLabel;
         private Label EmailLabel;
         private Button EditProfileDataButton;
-        public TextBox NameTextBox;
-        public TextBox EmailTextBox;
-        public TextBox LoginTextBox;
+        private Label ProfileNameLabel;
+        private Label ProfileLoginLabel;
+        private Label ProfileEmailLabel;
     }
 }

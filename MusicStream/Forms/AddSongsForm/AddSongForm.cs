@@ -1,6 +1,4 @@
-﻿using MusicStream.Forms.MenuForm;
-
-namespace MusicStream
+﻿namespace MusicStream
 {
     public partial class AddSongForm : Form
     {
@@ -11,6 +9,7 @@ namespace MusicStream
             InitializeComponent();
             PopulateGenreComboBox();
             PopulateMoodComboBox();
+            PopulateDurationComboBox();
         }
 
         public AddSongForm(User currentUser)
@@ -19,6 +18,7 @@ namespace MusicStream
             CurrentUser = currentUser;
             PopulateGenreComboBox();
             PopulateMoodComboBox();
+            PopulateDurationComboBox();
         }
 
         private void AddSongForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -47,8 +47,8 @@ namespace MusicStream
                    !string.IsNullOrEmpty(AuthorTextBox.Text) &&
                    !string.IsNullOrEmpty(SongCountryTextBox.Text) &&
                    !string.IsNullOrEmpty(SongYearsTextBox.Text) &&
-                   !string.IsNullOrEmpty(DurationTextBox.Text) &&
                    MoodComboBox.SelectedIndex != -1 &&
+                   DurationComboBox.SelectedIndex != -1 &&
                    GenreComboBox.SelectedIndex != -1;
         }
 
@@ -64,9 +64,18 @@ namespace MusicStream
 
         public bool ValidateSongYears(string songYears)
         {
-            if (songYears.Any(char.IsLetter) || int.Parse(songYears) > 2024)
+            if (songYears.Any(char.IsLetter))
             {
-                MessageBox.Show("Годы не должны содержать буквы или быть больше 2024.");
+                MessageBox.Show("Годы не должны содержать букв.");
+                return false;
+            }
+            return true;
+        }
+        public bool ValidateRealSongYears(string songYears)
+        {
+            if (int.Parse(songYears) > 2024)
+            {
+                MessageBox.Show("Год не может быть выше текущего.");
                 return false;
             }
             return true;
@@ -88,13 +97,19 @@ namespace MusicStream
                     return;
                 }
 
+                if (!ValidateRealSongYears(SongYearsTextBox.Text))
+                {
+                    SongYearsTextBox.Text = string.Empty;
+                    return;
+                }
+
                 var newSong = new Songs
                 {
                     SongName = SongNameTextBox.Text,
                     Author = AuthorTextBox.Text,
                     SongCountry = SongCountryTextBox.Text,
                     SongYears = SongYearsTextBox.Text,
-                    Duration = DurationTextBox.Text,
+                    Duration = DurationComboBox.SelectedItem.ToString(),
                     Mood = MoodComboBox.SelectedItem.ToString(),
                     Genre = GenreComboBox.SelectedItem.ToString()
                 };
@@ -119,7 +134,7 @@ namespace MusicStream
             SongCountryTextBox.Text = string.Empty;
             SongYearsTextBox.Text = string.Empty;
             MoodComboBox.Text = string.Empty;
-            DurationTextBox.Text = string.Empty;
+            DurationComboBox.Text = string.Empty;
             GenreComboBox.Text = string.Empty;
         }
 
@@ -138,6 +153,14 @@ namespace MusicStream
             MoodComboBox.Items.Add("Depressive");
             MoodComboBox.Items.Add("Calmness");
             MoodComboBox.Items.Add("Positive");
+        }
+
+        private void PopulateDurationComboBox()
+        {
+            DurationComboBox.Items.Add("1-5 min");
+            DurationComboBox.Items.Add("5-10 min");
+            DurationComboBox.Items.Add("10-15 min");
+            DurationComboBox.Items.Add("15-20 min");
         }
     }
 }
