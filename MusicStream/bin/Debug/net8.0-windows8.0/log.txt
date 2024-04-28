@@ -319,3 +319,20 @@
 2024-04-28 13:33:36.7779|INFO|MusicStream.Program|Программа запущена
 2024-04-28 13:33:43.2966|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
 2024-04-28 13:33:43.4483|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 13:58:45.0776|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:58:58.3791|INFO|MusicStream.Program|Программа запущена
+2024-04-28 13:59:04.6360|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 13:59:04.7698|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 14:00:17.9109|INFO|MusicStream.Program|Программа запущена
+2024-04-28 14:03:05.6526|INFO|MusicStream.Program|Программа запущена
+2024-04-28 14:03:10.5514|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 14:03:10.7003|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 14:10:19.2317|INFO|MusicStream.Program|Программа запущена
+2024-04-28 14:10:25.1314|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 14:10:25.2817|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 14:12:18.4484|INFO|MusicStream.Program|Программа запущена
+2024-04-28 14:12:24.0988|INFO|MusicStream.LoginForm|Проверяется существование пользователя.
+2024-04-28 14:12:24.2507|INFO|MusicStream.LoginForm|Пользователь выполнил вход.
+2024-04-28 14:12:25.5753|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+2024-04-28 14:12:27.9275|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+2024-04-28 14:12:28.7273|ERROR|MusicStream.ProfileForm|Ошибка при обновлении данных пользователя: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.

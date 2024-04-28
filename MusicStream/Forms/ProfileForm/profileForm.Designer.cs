@@ -35,9 +35,9 @@
             LoginLabel = new Label();
             EmailLabel = new Label();
             EditProfileDataButton = new Button();
-            ProfileNameLabel = new Label();
-            ProfileLoginLabel = new Label();
-            ProfileEmailLabel = new Label();
+            ProfileNameTextBox = new TextBox();
+            ProfileLoginTextBox = new TextBox();
+            ProfileEmailTextBox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -95,27 +95,28 @@
             EditProfileDataButton.Size = new Size(290, 37);
             EditProfileDataButton.TabIndex = 8;
             EditProfileDataButton.Text = "Редактировать профиль";
+            EditProfileDataButton.Click += EditProfileDataButton_Click;
             // 
-            // ProfileNameLabel
+            // ProfileNameTextBox
             // 
-            ProfileNameLabel.Location = new Point(392, 233);
-            ProfileNameLabel.Name = "ProfileNameLabel";
-            ProfileNameLabel.Size = new Size(493, 28);
-            ProfileNameLabel.TabIndex = 9;
+            ProfileNameTextBox.Location = new Point(392, 234);
+            ProfileNameTextBox.Name = "ProfileNameTextBox";
+            ProfileNameTextBox.Size = new Size(493, 27);
+            ProfileNameTextBox.TabIndex = 12;
             // 
-            // ProfileLoginLabel
+            // ProfileLoginTextBox
             // 
-            ProfileLoginLabel.Location = new Point(392, 315);
-            ProfileLoginLabel.Name = "ProfileLoginLabel";
-            ProfileLoginLabel.Size = new Size(493, 28);
-            ProfileLoginLabel.TabIndex = 10;
+            ProfileLoginTextBox.Location = new Point(392, 316);
+            ProfileLoginTextBox.Name = "ProfileLoginTextBox";
+            ProfileLoginTextBox.Size = new Size(493, 27);
+            ProfileLoginTextBox.TabIndex = 13;
             // 
-            // ProfileEmailLabel
+            // ProfileEmailTextBox
             // 
-            ProfileEmailLabel.Location = new Point(392, 406);
-            ProfileEmailLabel.Name = "ProfileEmailLabel";
-            ProfileEmailLabel.Size = new Size(493, 28);
-            ProfileEmailLabel.TabIndex = 11;
+            ProfileEmailTextBox.Location = new Point(392, 405);
+            ProfileEmailTextBox.Name = "ProfileEmailTextBox";
+            ProfileEmailTextBox.Size = new Size(493, 27);
+            ProfileEmailTextBox.TabIndex = 14;
             // 
             // ProfileForm
             // 
@@ -123,9 +124,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(954, 710);
-            Controls.Add(ProfileEmailLabel);
-            Controls.Add(ProfileLoginLabel);
-            Controls.Add(ProfileNameLabel);
+            Controls.Add(ProfileEmailTextBox);
+            Controls.Add(ProfileLoginTextBox);
+            Controls.Add(ProfileNameTextBox);
             Controls.Add(EditProfileDataButton);
             Controls.Add(EmailLabel);
             Controls.Add(LoginLabel);
@@ -141,6 +142,7 @@
             Load += ProfileForm_Load;
             ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -151,8 +153,8 @@
         private Label LoginLabel;
         private Label EmailLabel;
         private Button EditProfileDataButton;
-        private Label ProfileNameLabel;
-        private Label ProfileLoginLabel;
-        private Label ProfileEmailLabel;
+        private TextBox ProfileNameTextBox;
+        private TextBox ProfileLoginTextBox;
+        private TextBox ProfileEmailTextBox;
     }
 }

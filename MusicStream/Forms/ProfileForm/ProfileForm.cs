@@ -21,9 +21,9 @@ namespace MusicStream
 
         public void FillUserData(User currentUser)
         {
-            ProfileNameLabel.Text = currentUser.Name ?? string.Empty;
-            ProfileLoginLabel.Text = currentUser.Email ?? string.Empty;
-            ProfileEmailLabel.Text = currentUser.Login ?? string.Empty;
+            ProfileNameTextBox.Text = currentUser.Name ?? string.Empty;
+            ProfileLoginTextBox.Text = currentUser.Email ?? string.Empty;
+            ProfileEmailTextBox.Text = currentUser.Login ?? string.Empty;
         }
 
         private void ProfileForm_Load(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace MusicStream
             FillUserData(currentUser);
         }
 
-        /*
+        
         private void EditProfileDataButton_Click(object sender, EventArgs e)
         {
             using (var db = new ApplicationContext())
@@ -42,9 +42,9 @@ namespace MusicStream
 
                     if (userToUpdate != null)
                     {
-                        userToUpdate.Name = NameTextBox.Text;
-                        userToUpdate.Email = EmailTextBox.Text;
-                        userToUpdate.Login = LoginTextBox.Text;
+                        userToUpdate.Name = ProfileNameTextBox.Text;
+                        userToUpdate.Email = ProfileEmailTextBox.Text;
+                        userToUpdate.Login = ProfileLoginTextBox.Text;
 
                         db.SaveChanges();
                         logger.Info($"Пользователь {userToUpdate.Login} обновил свои данные");
@@ -63,7 +63,7 @@ namespace MusicStream
                 }
             }
         }
-        */
+        
 
         private void ProfileForm_FormClosing(object sender, FormClosingEventArgs e)
         {

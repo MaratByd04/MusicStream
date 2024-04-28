@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\profileform\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\profileform\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\profileform\\profileform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\profileform\\profileform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\profileform\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\profileform\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\menuform\\recommendationengineprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\menuform\\recommendationengineprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\recommendationform\\recommendationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\recommendationform\\recommendationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\recommendationform\\recommendationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\recommendationform\\recommendationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\profileform\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\profileform\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\addsongsform\\addsongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\classesforentity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\menuform\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\profileform\\profileform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\profileform\\profileform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\menuform\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\menuform\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\recommendationform\\recommendationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\recommendationform\\recommendationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\recommendationform\\recommendationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -92,10 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A88B81C-2E55-4EE8-BA80-0DD5BD43C075}|MusicStreamTest\\MusicStreamTest.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstreamtest\\musicstreamtest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{8A88B81C-2E55-4EE8-BA80-0DD5BD43C075}|MusicStreamTest\\MusicStreamTest.csproj|solutionrelative:musicstreamtest\\musicstreamtest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|solutionrelative:musicstream\\forms\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36F2910-42E8-4F0C-80DB-BA85F9C96076}|MusicStream\\MusicStream.csproj|c:\\users\\\u044F\\documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\musicstream\\musicstream\\forms\\addsongsform\\addsongform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -156,15 +156,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddSongForm.cs",
-              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
-              "RelativeDocumentMoniker": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
-              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
-              "RelativeToolTip": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAIA7wHEAAABBAAAA",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\LoginForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "MusicStream\\Forms\\LoginForm\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\LoginForm\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "MusicStream\\Forms\\LoginForm\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T11:45:56.468Z",
+              "WhenOpened": "2024-04-18T17:54:21.288Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "profileForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
+              "RelativeDocumentMoniker": "MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
+              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
+              "RelativeToolTip": "MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAYwGAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:55:18.388Z",
               "EditorCaption": ""
             },
             {
@@ -182,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProfileForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\ProfileForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\ProfileForm\\ProfileForm.cs",
@@ -194,45 +206,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddSongForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
-              "RelativeDocumentMoniker": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
-              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:36:00.031Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RecommendationForm.cs",
-              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
-              "RelativeDocumentMoniker": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
-              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
-              "RelativeToolTip": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:23:36.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ProfileForm.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\ProfileForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\ProfileForm\\ProfileForm.cs",
               "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\ProfileForm.cs",
               "RelativeToolTip": "MusicStream\\Forms\\ProfileForm\\ProfileForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAPAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T14:11:21.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "RecommendationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
+              "RelativeDocumentMoniker": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
+              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T18:58:35.116Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecommendationForm.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
+              "RelativeDocumentMoniker": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
+              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
+              "RelativeToolTip": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAKEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T18:23:36.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddSongForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
+              "RelativeDocumentMoniker": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
+              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs [Design]",
+              "RelativeToolTip": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:36:00.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddSongForm.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
+              "RelativeDocumentMoniker": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
+              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
+              "RelativeToolTip": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAIA7wHEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T11:45:56.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\LoginForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\LoginForm\\LoginForm.cs",
@@ -240,12 +274,11 @@
               "RelativeToolTip": "MusicStream\\Forms\\LoginForm\\LoginForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T20:08:05.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T20:08:05.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\ClassesForEntity\\User.cs",
               "RelativeDocumentMoniker": "MusicStream\\ClassesForEntity\\User.cs",
@@ -253,12 +286,11 @@
               "RelativeToolTip": "MusicStream\\ClassesForEntity\\User.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwCAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:04:42.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T18:04:42.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Songs.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\ClassesForEntity\\Songs.cs",
               "RelativeDocumentMoniker": "MusicStream\\ClassesForEntity\\Songs.cs",
@@ -266,12 +298,11 @@
               "RelativeToolTip": "MusicStream\\ClassesForEntity\\Songs.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAkwDAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:04:59.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T18:04:59.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "SavedSongs.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\ClassesForEntity\\SavedSongs.cs",
               "RelativeDocumentMoniker": "MusicStream\\ClassesForEntity\\SavedSongs.cs",
@@ -279,12 +310,11 @@
               "RelativeToolTip": "MusicStream\\ClassesForEntity\\SavedSongs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:22:59.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T18:22:59.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStreamTest\\UnitTest1.cs",
               "RelativeDocumentMoniker": "MusicStreamTest\\UnitTest1.cs",
@@ -292,12 +322,11 @@
               "RelativeToolTip": "MusicStreamTest\\UnitTest1.cs",
               "ViewState": "AQIAAEcAAAAAAAAAAAASwFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T18:29:58.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T18:29:58.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Program.cs",
               "RelativeDocumentMoniker": "MusicStream\\Program.cs",
@@ -305,12 +334,11 @@
               "RelativeToolTip": "MusicStream\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:17:10.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T18:17:10.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "MusicStream\\ApplicationContext.cs",
@@ -318,12 +346,11 @@
               "RelativeToolTip": "MusicStream\\ApplicationContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:09:00.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T18:09:00.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "SignInForm.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\SignInForm\\SignInForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\SignInForm\\SignInForm.cs",
@@ -336,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "SavedSongsForm.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\SavedSongsForm\\SavedSongsForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\SavedSongsForm\\SavedSongsForm.cs",
@@ -349,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "MenuForm.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\MenuForm\\MenuForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\MenuForm\\MenuForm.cs",
@@ -362,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "RecommendationEngine.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\MenuForm\\RecommendationEngine.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\MenuForm\\RecommendationEngine.cs",
@@ -370,37 +397,22 @@
               "RelativeToolTip": "MusicStream\\Forms\\MenuForm\\RecommendationEngine.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T19:02:07.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T19:02:07.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "profileForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
-              "RelativeDocumentMoniker": "MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
-              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
-              "RelativeToolTip": "MusicStream\\Forms\\ProfileForm\\profileForm.Designer.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAawGAAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:18.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "MenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\MenuForm\\MenuForm.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\MenuForm\\MenuForm.cs",
               "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\MenuForm\\MenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "MusicStream\\Forms\\MenuForm\\MenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:18:04.279Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-04-18T18:18:04.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "RecommendationForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.Designer.cs",
               "RelativeDocumentMoniker": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.Designer.cs",
@@ -408,22 +420,12 @@
               "RelativeToolTip": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.Designer.cs",
               "ViewState": "AQIAANIAAAAAAAAAAAAAwOUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:00:18.018Z"
+              "WhenOpened": "2024-04-18T21:00:18.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RecommendationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
-              "RelativeDocumentMoniker": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs",
-              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "MusicStream\\Forms\\RecommendationForm\\RecommendationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:58:35.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -431,12 +433,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AQIAAJ4SAAAAAAAAAAAIwLUSAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-04-18T20:20:32.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T20:20:32.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "MusicStreamTest",
               "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStreamTest\\MusicStreamTest.csproj",
               "RelativeDocumentMoniker": "MusicStreamTest\\MusicStreamTest.csproj",
@@ -444,17 +445,6 @@
               "RelativeToolTip": "MusicStreamTest\\MusicStreamTest.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-04-24T18:32:22.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\LoginForm\\LoginForm.cs",
-              "RelativeDocumentMoniker": "MusicStream\\Forms\\LoginForm\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\\u042F\\Documents\\\u0441\u044B\u043D \u043F\u0440\u043E\u0433\u0435\u0440 \u0433\u043E\u0440\u0435 \u0432 \u0441\u0435\u043C\u044C\u0435\\MusicStream\\MusicStream\\Forms\\LoginForm\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "MusicStream\\Forms\\LoginForm\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T17:54:21.288Z"
             },
             {
               "$type": "Document",
@@ -466,8 +456,7 @@
               "RelativeToolTip": "MusicStream\\Forms\\AddSongsForm\\AddSongForm.Designer.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAUwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T13:27:27.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-26T13:27:27.168Z"
             },
             {
               "$type": "Document",
@@ -537,8 +526,7 @@
               "RelativeToolTip": "MusicStream\\Forms\\MenuForm\\MenuForm.Designer.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAawBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T20:58:26.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T20:58:26.274Z"
             },
             {
               "$type": "Document",
@@ -563,7 +551,8 @@
               "RelativeToolTip": "MusicStream\\Forms\\LoginForm\\LoginForm.Designer.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAhwMsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:14:11.712Z"
+              "WhenOpened": "2024-04-18T18:14:11.712Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
